@@ -1,0 +1,9 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas.json	5564	-	0	0	0	0	0	0	5	82	0	0	0	0	0	0	0	1	0	0	98	177	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur.json	2585	19	0	0	0	1	0	378	0	315	0	0	1	0	0	0	0	1	0	0	463	3067	0	0	0	14	0	2
+fsh-generated/resources/StructureDefinition-FrAppointmentSAS.json	5137	31	1	0	0	0	0	479	0	490	0	0	0	0	0	0	0	1	0	0	721	2501	0	0	0	25	0	2
+fsh-generated/resources/StructureDefinition-FrSlotAgregateur.json	4435	25	0	0	0	0	0	481	0	233	0	0	0	0	0	0	0	1	0	0	360	1278	0	0	0	10	0	0
+fsh-generated/resources/StructureDefinition-FrScheduleAgregateur.json	1159	14	0	0	0	0	0	160	0	117	0	0	0	0	0	0	0	0	0	0	191	703	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-FrLocationAgregateur.json	1547	16	0	0	0	0	0	339	0	279	0	0	0	0	0	0	0	0	0	0	431	1460	0	0	0	12	0	0
+fsh-generated/resources/StructureDefinition-FrPractitionerAgregateur.json	2532	17	0	0	0	0	0	786	0	730	0	0	1	0	0	0	0	4	0	0	1068	3114	0	0	0	31	1	2
+fsh-generated/resources/StructureDefinition-BundleAgregateur.json	3592	21	0	0	0	0	0	710	0	634	0	0	0	0	0	0	0	3	0	0	859	3149	0	0	0	44	0	2
