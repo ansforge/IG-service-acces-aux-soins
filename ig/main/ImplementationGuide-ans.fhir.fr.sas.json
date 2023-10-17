@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2023-06-16T12:21:52+00:00",
+  "date" : "2023-10-17T15:35:53+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -30,7 +30,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.0.0"
+    "version" : "5.3.0"
   },
   {
     "id" : "hl7ext",
@@ -262,6 +262,17 @@
       "extension" : [{
         "url" : "code",
         "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
       },
       {
         "url" : "value",
@@ -541,6 +552,17 @@
       "extension" : [{
         "url" : "code",
         "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
       },
       {
         "url" : "value",
