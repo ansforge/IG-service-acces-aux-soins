@@ -37,7 +37,7 @@
   <version value="0.1.0"/>
   <name value="FrAppointmentSAS"/>
   <status value="draft"/>
-  <date value="2023-10-19T09:11:02+00:00"/>
+  <date value="2023-10-20T12:59:44+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -47,6 +47,13 @@
     </telecom>
   </contact>
   <description value="Profil de Appointment, dérivé de FrAppointment, pour le cas d'usage prise de RDV de la plateforme SAS (Service d'accès aux soins)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
