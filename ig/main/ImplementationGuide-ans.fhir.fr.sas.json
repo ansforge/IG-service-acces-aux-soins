@@ -10,13 +10,20 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2023-10-17T15:35:53+00:00",
+  "date" : "2023-10-20T12:58:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
     "telecom" : [{
       "system" : "url",
       "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
     }]
   }],
   "packageId" : "ans.fhir.fr.sas",
