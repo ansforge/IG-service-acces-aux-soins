@@ -1,0 +1,58 @@
+[
+  {
+    "id" : "BundleAgregateur",
+    "type" : "StructureDefinition",
+    "url" : "http://sas.fr/fhir/StructureDefinition/BundleAgregateur",
+    "version" : "0.1.0",
+    "name" : "BundleAgregateur"
+  },
+  {
+    "id" : "FrAppointmentSAS",
+    "type" : "StructureDefinition",
+    "url" : "http://sas.fr/fhir/StructureDefinition/FrAppointmentSAS",
+    "version" : "0.1.0",
+    "name" : "FrAppointmentSAS"
+  },
+  {
+    "id" : "FrLocationAgregateur",
+    "type" : "StructureDefinition",
+    "url" : "http://sas.fr/fhir/StructureDefinition/FrLocationAgregateur",
+    "version" : "0.1.0",
+    "name" : "FrLocationAgregateur"
+  },
+  {
+    "id" : "FrPractitionerAgregateur",
+    "type" : "StructureDefinition",
+    "url" : "http://sas.fr/fhir/StructureDefinition/FrPractitionerAgregateur",
+    "version" : "0.1.0",
+    "name" : "FrPractitionerAgregateur"
+  },
+  {
+    "id" : "FrPractitionerRoleExerciceAgregateur",
+    "type" : "StructureDefinition",
+    "url" : "http://sas.fr/fhir/StructureDefinition/FrPractitionerRoleExerciceAgregateur",
+    "version" : "0.1.0",
+    "name" : "FrPractitionerRoleExerciceAgregateur"
+  },
+  {
+    "id" : "FrScheduleAgregateur",
+    "type" : "StructureDefinition",
+    "url" : "http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur",
+    "version" : "0.1.0",
+    "name" : "FrScheduleAgregateur"
+  },
+  {
+    "id" : "FrSlotAgregateur",
+    "type" : "StructureDefinition",
+    "url" : "http://sas.fr/fhir/StructureDefinition/FrSlotAgregateur",
+    "version" : "0.1.0",
+    "name" : "FrSlotAgregateur"
+  },
+  {
+    "id" : "ans.fhir.fr.sas",
+    "type" : "ImplementationGuide",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ImplementationGuide/ans.fhir.fr.sas",
+    "version" : "0.1.0",
+    "name" : "ServicedAccsauxSoins"
+  }
+]

@@ -1,0 +1,469 @@
+{
+  "date" : "Fri, 20 Oct, 2023 12:25:00 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas.json",
+      "size" : 5745,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 39,
+          "length" : 101
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 41,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 64
+        },
+        {
+          "activity" : "validate",
+          "start" : 49,
+          "length" : 635
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 50,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 50,
+          "length" : 116
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 73
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 208,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BundleAgregateur.json",
+      "size" : 3592,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 22
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 38,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 38,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 25
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 39,
+          "length" : 1031
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 407
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 3377
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 50,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 50,
+          "length" : 833
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 3817
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 208,
+          "length" : 42
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 225,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-FrAppointmentSAS.json",
+      "size" : 5137,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 18
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 21
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 295
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 317
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 728
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 50,
+          "length" : 3
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 51,
+          "length" : 569
+        },
+        {
+          "activity" : "generate2",
+          "start" : 61,
+          "length" : 1026
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 207,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 208,
+          "length" : 30
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 225,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-FrLocationAgregateur.json",
+      "size" : 1547,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 22
+        },
+        {
+          "activity" : "scan",
+          "start" : 38,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 15
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 180
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 204
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 385
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 50,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 330
+        },
+        {
+          "activity" : "generate2",
+          "start" : 62,
+          "length" : 734
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 208,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 225,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-FrPractitionerAgregateur.json",
+      "size" : 2532,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 19
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 470
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 538
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 1246
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 814
+        },
+        {
+          "activity" : "generate2",
+          "start" : 63,
+          "length" : 1513
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 208,
+          "length" : 20
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 225,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur.json",
+      "size" : 2585,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 16
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 150
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 163
+        },
+        {
+          "activity" : "validate",
+          "start" : 49,
+          "length" : 348
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 50,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 403
+        },
+        {
+          "activity" : "generate2",
+          "start" : 64,
+          "length" : 478
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 70,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 208,
+          "length" : 26
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 225,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-FrScheduleAgregateur.json",
+      "size" : 1159,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 12
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 73
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 79
+        },
+        {
+          "activity" : "validate",
+          "start" : 49,
+          "length" : 150
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 50,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 146
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 299
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 208,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-FrSlotAgregateur.json",
+      "size" : 4435,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 38,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 38,
+          "length" : 19
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 115
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 146
+        },
+        {
+          "activity" : "validate",
+          "start" : 49,
+          "length" : 377
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 50,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 264
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 554
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 208,
+          "length" : 16
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 225,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}
