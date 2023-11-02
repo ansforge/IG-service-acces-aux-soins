@@ -1,9 +1,9 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas.json	5595	-	0	0	0	0	0	0	4	57	0	0	0	0	0	0	0	1	0	0	95	125	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-BundleAgregateur.json	3592	17	0	0	0	1	0	3135	1	334	0	0	0	0	0	0	0	5	0	0	800	3540	0	0	0	37	0	3
-fsh-generated/resources/StructureDefinition-FrAppointmentSAS.json	2276	13	0	0	0	0	0	264	0	220	0	0	3	0	0	0	0	1	0	0	413	930	0	0	0	27	0	1
-fsh-generated/resources/StructureDefinition-FrLocationAgregateur.json	1547	11	0	0	0	0	0	163	0	160	0	0	0	0	0	0	0	1	0	0	319	648	0	0	0	27	0	0
-fsh-generated/resources/StructureDefinition-FrPractitionerAgregateur.json	2532	12	0	0	0	0	0	430	0	433	0	0	0	0	0	0	0	2	0	0	798	1457	0	0	0	24	0	2
-fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur.json	2585	12	0	0	0	0	0	126	0	162	0	0	0	0	0	0	0	1	0	0	310	472	0	0	0	9	0	0
-fsh-generated/resources/StructureDefinition-FrScheduleAgregateur.json	1159	10	0	0	0	0	0	66	0	78	0	0	0	0	0	0	0	0	0	0	144	249	0	0	0	6	0	1
-fsh-generated/resources/StructureDefinition-FrSlotAgregateur.json	4435	14	0	0	1	0	0	148	0	129	0	0	0	0	0	0	0	1	0	0	323	395	0	0	0	9	1	0
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas.json	5595	-	0	0	0	0	0	0	3	64	0	0	0	0	0	0	0	0	0	0	120	98	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-BundleAgregateur.json	3592	24	1	0	0	0	0	4007	0	368	0	0	1	0	0	0	0	3	0	0	837	3795	0	0	0	24	0	5
+fsh-generated/resources/StructureDefinition-FrAppointmentSAS.json	2276	14	0	0	0	0	0	292	0	316	0	0	0	0	0	0	0	1	0	0	416	976	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-FrLocationAgregateur.json	1547	11	0	0	0	0	0	174	0	193	0	0	0	0	0	0	0	1	0	0	327	756	0	0	0	10	0	1
+fsh-generated/resources/StructureDefinition-FrPractitionerAgregateur.json	2532	13	0	0	0	0	0	490	0	414	0	0	0	0	0	0	0	3	0	0	821	1556	0	0	0	22	1	2
+fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur.json	2585	12	0	0	0	0	0	155	0	145	0	0	0	0	0	0	0	1	0	0	321	590	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-FrScheduleAgregateur.json	1159	9	0	0	0	0	0	89	0	68	0	0	0	0	0	0	0	0	0	0	149	271	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-FrSlotAgregateur.json	4435	15	0	0	0	0	0	117	0	120	0	0	1	0	0	0	0	1	0	0	356	477	0	0	0	8	0	0

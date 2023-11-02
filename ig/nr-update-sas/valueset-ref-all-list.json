@@ -201,9 +201,9 @@
       "uses" : {
       },
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
       "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur"
+      "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -217,12 +217,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-FrPractitionerAgregateur.html" : "FrPractitionerAgregateur",
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
-      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
       "StructureDefinition-FrLocationAgregateur.html" : "FrLocationAgregateur",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
+      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
       "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur"
+      "StructureDefinition-FrPractitionerAgregateur.html" : "FrPractitionerAgregateur"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -236,13 +236,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-FrPractitionerAgregateur.html" : "FrPractitionerAgregateur",
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
-      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
       "StructureDefinition-FrLocationAgregateur.html" : "FrLocationAgregateur",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
+      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
       "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur",
       "StructureDefinition-BundleAgregateur.html" : "BundleAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur"
+      "StructureDefinition-FrPractitionerAgregateur.html" : "FrPractitionerAgregateur"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -357,8 +357,8 @@
       "uses" : {
       },
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
-      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur"
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
+      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -373,8 +373,8 @@
       "uses" : {
       },
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
-      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur"
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
+      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/slotstatus",
@@ -485,9 +485,9 @@
       "uses" : {
       },
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
       "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur"
+      "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
