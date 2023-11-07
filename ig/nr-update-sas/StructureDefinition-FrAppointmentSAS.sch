@@ -12,11 +12,39 @@
   <sch:pattern>
     <sch:title>f:Appointment</sch:title>
     <sch:rule context="f:Appointment">
+      <sch:assert test="count(f:extension[@url = 'http://interopsante.org/fhir/StructureDefinition/FrAppointmentOperator']) &gt;= 1">extension with URL = 'http://interopsante.org/fhir/StructureDefinition/FrAppointmentOperator': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://interopsante.org/fhir/StructureDefinition/FrAppointmentOperator']) &lt;= 1">extension with URL = 'http://interopsante.org/fhir/StructureDefinition/FrAppointmentOperator': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:start) &gt;= 1">start: minimum cardinality of 'start' is 1</sch:assert>
       <sch:assert test="count(f:end) &gt;= 1">end: minimum cardinality of 'end' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Appointment/f:extension/f:value[x] 1</sch:title>
+    <sch:rule context="f:Appointment/f:extension/f:value[x]">
+      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Appointment/f:extension/f:value[x]/f:identifier 1</sch:title>
+    <sch:rule context="f:Appointment/f:extension/f:value[x]/f:identifier">
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:value) &gt;= 1">value: minimum cardinality of 'value' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Appointment/f:extension/f:value[x]/f:identifier/f:type 1</sch:title>
+    <sch:rule context="f:Appointment/f:extension/f:value[x]/f:identifier/f:type">
+      <sch:assert test="count(f:coding) &gt;= 1">coding: minimum cardinality of 'coding' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Appointment/f:extension/f:value[x]/f:identifier/f:type/f:coding 1</sch:title>
+    <sch:rule context="f:Appointment/f:extension/f:value[x]/f:identifier/f:type/f:coding">
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

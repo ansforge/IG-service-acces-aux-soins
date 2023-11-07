@@ -1,13 +1,13 @@
 ﻿SAS : Validation Results
 =========================================
 
-err = 14, warn = 32, info = 17
-IG Publisher Version: 1.5.1
-Generated Thu Nov 02 17:34:11 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
+err = 14, warn = 32, info = 18
+IG Publisher Version: 1.5.2
+Generated Tue Nov 07 17:31:33 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
  Build Errors : 1 / 4 / 0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-BundleAgregateur : 2 / 1 / 1
- /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrAppointmentSAS : 2 / 2 / 5
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrAppointmentSAS : 2 / 2 / 6
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrLocationAgregateur : 2 / 1 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrPractitionerAgregateur : 2 / 18 / 5
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur : 2 / 2 / 5
@@ -27,11 +27,12 @@ WARNING: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition
 ERROR: /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-BundleAgregateur: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/BundleAgregateur vs http://sas.fr/fhir/StructureDefinition/BundleAgregateur
 == fsh-generated/resources/StructureDefinition-FrAppointmentSAS.json ==
 ERROR: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition/FrAppointmentSAS'): Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrAppointmentSAS.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrAppointmentSAS) does not match the URL (http://sas.fr/fhir/StructureDefinition/FrAppointmentSAS)
-INFORMATION: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[22].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[64].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[69].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[70].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[60].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[36].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[47].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[89].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[94].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[95].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/FrAppointmentSAS: StructureDefinition.snapshot.element[85].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition/FrAppointmentSAS'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrAppointmentSAS: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrAppointmentSAS vs http://sas.fr/fhir/StructureDefinition/FrAppointmentSAS
 == fsh-generated/resources/StructureDefinition-FrLocationAgregateur.json ==
