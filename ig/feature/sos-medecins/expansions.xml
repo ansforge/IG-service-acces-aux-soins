@@ -1,9 +1,397 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="00da07c9-be2c-43af-b797-0927df55affe"/>
+  <id value="eff1331a-4302-4fb1-a43b-4437d009180c"/>
   <meta>
-    <lastUpdated value="2023-10-20T12:59:44.466+00:00"/>
+    <lastUpdated value="2023-11-07T15:58:12.189+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0276.html">codesystem appointmentReason v2.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0276-ROUTINE"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0276.html#v2-0276-ROUTINE">ROUTINE</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0276</td>
+                <td>Créneau avec prise de RDV possible</td>
+                <td>
+                  <div>
+                    <p>Routine appointment - default if not valued</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0276-WALKIN"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0276.html#v2-0276-WALKIN">WALKIN</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0276</td>
+                <td>Créneau sans prise de RDV possible à domicile</td>
+                <td>
+                  <div>
+                    <p>A previously unscheduled walk-in visit</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason"/>
+        <version value="0.1.0"/>
+        <name value="AppointmentReasonSASSOS"/>
+        <title value="Appointment reason SAS SOS"/>
+        <status value="draft"/>
+        <date value="2023-11-07T15:58:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:08d24593-80c7-4f37-8f68-41290fbf207b"/>
+          <timestamp value="2023-11-07T15:59:18+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0276|2.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
+            <code value="ROUTINE"/>
+            <display value="Créneau avec prise de RDV possible"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
+            <code value="WALKIN"/>
+            <display value="Créneau sans prise de RDV possible à domicile"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-participationstatus.html">codesystem ParticipationStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-participationstatus-accepted"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-participationstatus.html#participationstatus-accepted">accepted</a>
+                </td>
+                <td>http://hl7.org/fhir/participationstatus</td>
+                <td>RDV accepté par le PS effecteur de soins</td>
+                <td>
+                  <div>
+                    <p>The participant has accepted the appointment.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-participationstatus-needs-action"> </a>  
+                  <a href="http://hl7.org/fhir/R4/codesystem-participationstatus.html#participationstatus-needs-action">needs-action</a>
+                </td>
+                <td>http://hl7.org/fhir/participationstatus</td>
+                <td>RDV en attente de confirmation par le PS effecteur de soins</td>
+                <td>
+                  <div>
+                    <p>The participant needs to indicate if they accept the appointment by changing this status to one of the other statuses.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status"/>
+        <version value="0.1.0"/>
+        <name value="ParticipantStatusSASSOS"/>
+        <title value="Statut participant SAS SOS"/>
+        <status value="draft"/>
+        <date value="2023-11-07T15:58:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:56f0c90a-bac7-4897-bc73-368af5955eca"/>
+          <timestamp value="2023-11-07T15:59:18+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/participationstatus|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/participationstatus"/>
+            <code value="accepted"/>
+            <display value="RDV accepté par le PS effecteur de soins"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/participationstatus"/>
+            <code value="needs-action"/>
+            <display value="RDV en attente de confirmation par le PS effecteur de soins"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html">codesystem ActCode v8.0.1 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-AMB"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">AMB</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>Consultation au cabinet</td>
+                <td>
+                  <div>
+                    <p>A comprehensive term for health care provided in a healthcare facility (e.g. a practitioneraTMs office, clinic setting, or hospital) on a nonresident basis. The term ambulatory usually implies that the patient has come to the location and is not assigned to a bed. Sometimes referred to as an outpatient encounter.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HH"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">HH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>Consultation à domicile</td>
+                <td>
+                  <div>
+                    <p>Healthcare encounter that takes place in the residence of the patient or a designee</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-VR"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR">VR</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>Téléconsultation</td>
+                <td>
+                  <div>
+                    <p>A patient encounter where the patient and the practitioner(s) are not in the same physical location. Examples include telephone conference, email exchange, robotic surgery, and televideo conference.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation"/>
+        <version value="0.1.0"/>
+        <name value="TypeConsultationSASSOS"/>
+        <title value="Type consultation SAS SOS"/>
+        <status value="draft"/>
+        <date value="2023-11-07T15:58:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:9ea2ca28-4456-45d4-8af1-220b71a9f530"/>
+          <timestamp value="2023-11-07T15:59:18+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode|8.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="AMB"/>
+            <display value="Consultation au cabinet"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="HH"/>
+            <display value="Consultation à domicile"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="VR"/>
+            <display value="Téléconsultation"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/CodeSystem/fr-v2-0203">codesystem fr-v2-0203 v1.0.1 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---interopsante.org-fhir-CodeSystem-fr-v2-0203-IDNPS"> </a>  
+                  <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/CodeSystem/fr-v2-0203.html#fr-v2-0203-IDNPS">IDNPS</a>
+                </td>
+                <td>http://interopsante.org/fhir/CodeSystem/fr-v2-0203</td>
+                <td>Identifiant National de Professionnel de Santé</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---interopsante.org-fhir-CodeSystem-fr-v2-0203-INTRN"> </a>  
+                  <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/CodeSystem/fr-v2-0203.html#fr-v2-0203-INTRN">INTRN</a>
+                </td>
+                <td>http://interopsante.org/fhir/CodeSystem/fr-v2-0203</td>
+                <td>Identifiant interne</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant"/>
+        <version value="0.1.0"/>
+        <name value="TypeIdentifiantSASSOS"/>
+        <title value="Type identifiant SAS SOS"/>
+        <status value="draft"/>
+        <date value="2023-11-07T15:58:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:03ae6e61-49b6-4a8f-bcfc-de7f60315ade"/>
+          <timestamp value="2023-11-07T15:59:19+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://interopsante.org/fhir/CodeSystem/fr-v2-0203|1.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://interopsante.org/fhir/CodeSystem/fr-v2-0203"/>
+            <code value="IDNPS"/>
+            <display value="Identifiant National de Professionnel de Santé"/>
+          </contains>
+          <contains>
+            <system value="http://interopsante.org/fhir/CodeSystem/fr-v2-0203"/>
+            <code value="INTRN"/>
+            <display value="Identifiant interne"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

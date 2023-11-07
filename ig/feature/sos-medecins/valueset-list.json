@@ -1,0 +1,51 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AppointmentReasonSASSOS",
+      "title" : "Appointment reason SAS SOS",
+      "description" : "Appointment reason SAS SOS",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ParticipantStatusSASSOS",
+      "title" : "Statut participant SAS SOS",
+      "description" : "Statut du participant RDV SAS SOS",
+      "systems" : ["http://hl7.org/fhir/participationstatus"]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TypeConsultationSASSOS",
+      "title" : "Type consultation SAS SOS",
+      "description" : "Type de consultations SAS SOS",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TypeCreneauSASSOS",
+      "title" : "Type créneaux SAS SOS",
+      "description" : "Type de Créneaux SAS SOS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau"
+      ]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TypeIdentifiantSASSOS",
+      "title" : "Type identifiant SAS SOS",
+      "description" : "Type d'identifiant SAS SOS",
+      "systems" : ["http://interopsante.org/fhir/CodeSystem/fr-v2-0203"]
+    }
+  ]
+}

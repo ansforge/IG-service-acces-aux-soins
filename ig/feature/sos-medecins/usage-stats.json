@@ -7,20 +7,20 @@
   "profiles": {
     "Bundle": [
       {
-        "url": "http://sas.fr/fhir/StructureDefinition/BundleAgregateur",
-        "title": "BundleAgregateur"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-bundle-aggregator",
+        "title": "BundleAgregateurSOS"
       }
     ],
     "Appointment": [
       {
-        "url": "http://sas.fr/fhir/StructureDefinition/FrAppointmentSAS",
-        "title": "FrAppointmentSAS"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-appointment",
+        "title": "FrAppointmentSASSOS"
       }
     ],
     "Location": [
       {
-        "url": "http://sas.fr/fhir/StructureDefinition/FrLocationAgregateur",
-        "title": "FrLocationAgregateur"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-location-aggregator",
+        "title": "FrLocationAgregateurSOS"
       }
     ],
     "Practitioner": [
@@ -37,14 +37,20 @@
     ],
     "Schedule": [
       {
-        "url": "http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur",
-        "title": "FrScheduleAgregateur"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-schedule-aggregator",
+        "title": "FrScheduleAgregateurSOS"
       }
     ],
     "Slot": [
       {
-        "url": "http://sas.fr/fhir/StructureDefinition/FrSlotAgregateur",
-        "title": "FrSlotAgregateur"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-slot-aggregator",
+        "title": "FrSlotAgregateurSOS"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator",
+        "title": "FrOrganizationAgregateurSOS"
       }
     ]
   },
@@ -71,6 +77,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
       "Practitioner.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/organization-period": [
+      "Organization"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -115,6 +124,12 @@
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrLocationUsePeriod": [
       "Location"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrOrganizationDescription": [
+      "Organization"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrOrganizationShortName": [
+      "Organization"
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrScheduleAvailabiltyTime": [
       "Schedule"

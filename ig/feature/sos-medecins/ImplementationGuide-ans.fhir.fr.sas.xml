@@ -10,7 +10,7 @@
   <name value="ServicedAccsauxSoins"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2023-10-20T12:59:44+00:00"/>
+  <date value="2023-11-07T15:58:12+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -472,6 +472,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sas-sos-valueset-appointmentreason"/>
+      </reference>
+      <name value="Appointment reason SAS SOS"/>
+      <description value="Appointment reason SAS SOS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -479,6 +490,17 @@
       </reference>
       <name value="BundleAgregateur"/>
       <description value="Profil de Bundle qui représente le flux de réponse contenant les créneaux disponibles dans le cadre du service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sas-sos-bundle-aggregator"/>
+      </reference>
+      <name value="BundleAgregateurSOS"/>
+      <description value="Bundle Agrégateur SAS SOS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -497,10 +519,40 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sas-sos-appointment"/>
+      </reference>
+      <name value="FrAppointmentSASSOS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/FrLocationAgregateur"/>
       </reference>
       <name value="FrLocationAgregateur"/>
       <description value="Profil de Location, dérivé de FrLocation, pour le service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sas-sos-location-aggregator"/>
+      </reference>
+      <name value="FrLocationAgregateurSOS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sas-sos-organization-aggregator"/>
+      </reference>
+      <name value="FrOrganizationAgregateurSOS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -541,10 +593,74 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sas-sos-schedule-aggregator"/>
+      </reference>
+      <name value="FrScheduleAgregateurSOS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/FrSlotAgregateur"/>
       </reference>
       <name value="FrSlotAgregateur"/>
       <description value="Profil de Slot, dérivé de FrSlot, pour le service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sas-sos-slot-aggregator"/>
+      </reference>
+      <name value="FrSlotAgregateurSOS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sas-sos-valueset-participant-status"/>
+      </reference>
+      <name value="Statut participant SAS SOS"/>
+      <description value="Statut du participant RDV SAS SOS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sas-sos-valueset-typeconsultation"/>
+      </reference>
+      <name value="Type consultation SAS SOS"/>
+      <description value="Type de consultations SAS SOS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sas-sos-valueset-typecreneau"/>
+      </reference>
+      <name value="Type créneaux SAS SOS"/>
+      <description value="Type de Créneaux SAS SOS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sas-sos-valueset-typeidentifiant"/>
+      </reference>
+      <name value="Type identifiant SAS SOS"/>
+      <description value="Type d'identifiant SAS SOS"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

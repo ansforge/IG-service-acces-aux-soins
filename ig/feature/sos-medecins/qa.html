@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 1, errors = 14, warn = 32, info = 18-->
+<!-- broken links = 1, errors = 14, warn = 63, info = 28-->
 <head>
   <title>ServicedAccsauxSoins : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,13 +36,13 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ServicedAccsauxSoins</h1>
- <p>Generated Fri Oct 20 13:02:52 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sas">https://interop.esante.gouv.fr/ig/fhir/sas</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sas/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Tue Nov 07 16:02:22 UTC 2023, FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/sas">https://interop.esante.gouv.fr/ig/fhir/sas</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/sas/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.16</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.2</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.sas, Canonical = https://interop.esante.gouv.fr/ig/fhir/sas</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Publication Request:</td><td><ul><li>The file package-list.json should not exist in the root folder <img src="icon-error.gif" height="16px" width="16px"/></li>
-<li><span title="Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/sas/package-list.json?nocache=1697806971344 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li><span title="Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/sas/package-list.json?nocache=1699372940811 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
@@ -60,65 +60,72 @@
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.fr.core#1.1.0:     <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/CodeSystem/fr-v2-0203">fr-v2-0203</a>
- (8 uses)
+ (9 uses),     <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/CodeSystem/fr-location-identifier-type">fr-location-identifier-type</a>
+ (4 uses),     <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/ValueSet/fr-organization-identifier-type">fr-organization-identifier-type</a>
+ (1 uses),     <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/CodeSystem/fr-v2-3307">fr-v2-3307</a>
+ (2 uses)
   </li>
   <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
  (15 uses),     <code>fhir-type</code>
- (75 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-standards-status.html">standards-status</a>
- (494 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-normative-version.html">normative-version</a>
- (494 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
- (8 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bindingname.html">bindingName</a>
- (80 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-iscommonbinding.html">isCommonBinding</a>
- (19 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
- (8 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice.html">bestpractice</a>
- (10 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
- (10 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
- (4 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
- (6 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-translatable.html">translatable</a>
- (26 uses),     <a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a>
- (4 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
- (9 uses),     <a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a>
- (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html">AppointmentCancellationReason</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-category.html">ServiceCategory</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-participantrequired.html">ParticipantRequired</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a>
+ (131 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-standards-status.html">standards-status</a>
+ (850 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-normative-version.html">normative-version</a>
+ (850 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
+ (14 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bindingname.html">bindingName</a>
+ (145 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-iscommonbinding.html">isCommonBinding</a>
+ (31 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (14 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice.html">bestpractice</a>
+ (19 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
+ (19 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/extension-elementdefinition-translatable.html">translatable</a>
+ (41 uses),     <a href="http://hl7.org/fhir/R4/insuranceplan.html">InsurancePlan</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (24 uses),     <a href="http://hl7.org/fhir/R4/documentmanifest.html">DocumentManifest</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html">AppointmentCancellationReason</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-category.html">ServiceCategory</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-participantrequired.html">ParticipantRequired</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-participationstatus.html">ParticipationStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-mode.html">LocationMode</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-hierarchy.html">hierarchy</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/extension-humanname-assembly-order.html">assembly-order</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-mode.html">LocationMode</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/extension-structuredefinition-hierarchy.html">hierarchy</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/extension-humanname-assembly-order.html">assembly-order</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-slotstatus.html">SlotStatus</a>
- (2 uses)
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-slotstatus.html">SlotStatus</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/extension-organization-period.html">period</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/codesystem-participationstatus.html">ParticipationStatus</a>
+ (1 uses)
   </li>
   <li>
 hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig//StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (7 uses)
+ (18 uses)
   </li>
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://interop.esante.gouv.fr/ig/fhir/sas (Problem #1 with package-list.json at https://interop.esante.gouv.fr/ig/fhir/sas: Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/sas/package-list.json?nocache=1697806782978 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://interop.esante.gouv.fr/ig/fhir/sas (Problem #1 with package-list.json at https://interop.esante.gouv.fr/ig/fhir/sas: Invalid HTTP response 404 from https://interop.esante.gouv.fr/ig/fhir/sas/package-list.json?nocache=1699372690350 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 14, warn = 32, info = 18, broken links = 1</td></tr>
+ <tr><td>Summary:</td><td> errors = 14, warn = 63, info = 28, broken links = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>9</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ImplementationGuide-ans.fhir.fr.sas"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -144,14 +151,62 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-FrSlotAgregateur"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrSlotAgregateur</b></a></td><td><b>2</b></td><td><b>3</b></td><td><b>1</b></td>
    </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-appointment"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-sas-sos-appointment</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-bundle-aggregator"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-sas-sos-bundle-aggregator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-location-aggregator"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-sas-sos-location-aggregator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-organization-aggregator"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-sas-sos-organization-aggregator</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-schedule-aggregator"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-sas-sos-schedule-aggregator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-slot-aggregator"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-sas-sos-slot-aggregator</b></a></td><td><b>0</b></td><td><b>7</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-appointmentreason"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/ValueSet-sas-sos-valueset-appointmentreason</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-participant-status"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/ValueSet-sas-sos-valueset-participant-status</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-typeconsultation"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/ValueSet-sas-sos-valueset-typeconsultation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-typecreneau"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/ValueSet-sas-sos-valueset-typecreneau</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-typeidentifiant"><b>/home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/ValueSet-sas-sos-valueset-typeidentifiant</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sas-sos-appointment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sas-sos-location-aggregator.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sas-sos-organization-aggregator.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sas-sos-schedule-aggregator.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sas-sos-slot-aggregator.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="securite.html#l350">output&#8203;/securite&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 207, column 224</a></b></td><td><b>error</b></td><td><b>The link 'annexes.html#sécurisation-des-échanges-par-mtls' for &quot;annexe dédiée à la sécurisation des échanges par mTLS&quot; cannot be resolved (valid targets: [ans-nav, segment-header, publish-box, bottom, hl7-logo, segment-post-footer, hl7-search-lnk, annexes, family-nav, ig-status, top, stripe, segment-footer, correspondance-des-environnements-anssas-et-éditeurs, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+     <td><b><a href="securite.html#l352">output&#8203;/securite&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 207, column 224</a></b></td><td><b>error</b></td><td><b>The link 'annexes.html#sécurisation-des-échanges-par-mtls' for &quot;annexe dédiée à la sécurisation des échanges par mTLS&quot; cannot be resolved (valid targets: [ans-nav, segment-header, publish-box, bottom, hl7-logo, segment-post-footer, hl7-search-lnk, annexes, family-nav, ig-status, top, stripe, segment-footer, correspondance-des-environnements-anssas-et-éditeurs, segment-navbar, segment-content, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
@@ -168,8 +223,9 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
 </table>
 <hr/>
 <a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ImplementationGuide-ans.fhir.fr.sas"> </a>
-<h2><a href="ImplementationGuide-ans.fhir.fr.sas.html">fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"></div>
+<h2><a href="ImplementationGuide-ans.fhir.fr.sas.html">fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/ans.fhir.fr.sas: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -210,16 +266,16 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[36]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c114436)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[47]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c133292)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[47]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c133296)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[89]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c206149)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[89]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c206157)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[94]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c214255)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[94]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c214270)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[95]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c216068)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[95]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c216086)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[85]&#8203;.fixed&#8203;.ofType(Coding)</b></td><td><b>warning</b></td><td title=""><b>For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
@@ -244,10 +300,10 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sas&#8203;.fr&#8203;/fhir&#8203;/StructureDefinition&#8203;/FrLocationAgregateur')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrLocationAgregateur.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrLocationAgregateur) does not match the URL (http://sas.fr/fhir/StructureDefinition/FrLocationAgregateur)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c45758)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c45761)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c78973)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c78978)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sas&#8203;.fr&#8203;/fhir&#8203;/StructureDefinition&#8203;/FrLocationAgregateur')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
@@ -269,16 +325,16 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sas&#8203;.fr&#8203;/fhir&#8203;/StructureDefinition&#8203;/FrPractitionerAgregateur')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrPractitionerAgregateur.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrPractitionerAgregateur) does not match the URL (http://sas.fr/fhir/StructureDefinition/FrPractitionerAgregateur)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c71705)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c71708)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c91290)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c91296)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[49]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c105031)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[49]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c105039)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[176]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c303446)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[176]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c303451)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.fixed&#8203;.ofType(CodeableConcept)</b></td><td><b>warning</b></td><td title=""><b>For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
@@ -351,16 +407,16 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sas&#8203;.fr&#8203;/fhir&#8203;/StructureDefinition&#8203;/FrPractitionerRoleExerciceAgregateur')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrPractitionerRoleExerciceAgregateur) does not match the URL (http://sas.fr/fhir/StructureDefinition/FrPractitionerRoleExerciceAgregateur)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c57361)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c57364)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c63082)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c63088)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[34]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c88045)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[34]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c88051)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[55]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c122027)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[55]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c122039)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31]&#8203;.fixed&#8203;.ofType(CodeableConcept)</b></td><td><b>warning</b></td><td title=""><b>For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
@@ -385,10 +441,10 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sas&#8203;.fr&#8203;/fhir&#8203;/StructureDefinition&#8203;/FrScheduleAgregateur')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrScheduleAgregateur.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrScheduleAgregateur) does not match the URL (http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c41618)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c41621)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c54228)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c54234)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sas&#8203;.fr&#8203;/fhir&#8203;/StructureDefinition&#8203;/FrScheduleAgregateur')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
@@ -410,7 +466,7 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sas&#8203;.fr&#8203;/fhir&#8203;/StructureDefinition&#8203;/FrSlotAgregateur')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-FrSlotAgregateur.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrSlotAgregateur) does not match the URL (http://sas.fr/fhir/StructureDefinition/FrSlotAgregateur)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c71754)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c71757)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[0]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J165-TypeCreneau-SAS/FHIR/JDV-J165-TypeCreneau-SAS on element Slot.meta.security could not be resolved</b></td>
@@ -423,6 +479,224 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-FrSlotAgregateur</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrSlotAgregateur vs http://sas.fr/fhir/StructureDefinition/FrSlotAgregateur</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-appointment"> </a>
+<h2><a href="StructureDefinition-sas-sos-appointment.html">fsh-generated/resources/StructureDefinition-sas-sos-appointment.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>FrAppointmentSASSOS&#8203;.Appointment&#8203;.participant&#8203;.status</b></td><td><b>warning</b></td><td title=""><b>Binding http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status could not be located</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[36]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c97616)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[47]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c116476)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[76]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c166674)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[77]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c168490)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant on element Appointment.extension.value[x].identifier.type.coding could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status on element Appointment.participant.status could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant on element Appointment.extension.value[x].identifier.type.coding could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[75]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status on element Appointment.participant.status could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/sas&#8203;/StructureDefinition&#8203;/sas-sos-appointment')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-bundle-aggregator"> </a>
+<h2><a href="StructureDefinition-sas-sos-bundle-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-bundle-aggregator.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/sas&#8203;/StructureDefinition&#8203;/sas-sos-bundle-aggregator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-location-aggregator"> </a>
+<h2><a href="StructureDefinition-sas-sos-location-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-location-aggregator.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c58018)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c90759)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/sas&#8203;/StructureDefinition&#8203;/sas-sos-location-aggregator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-organization-aggregator"> </a>
+<h2><a href="StructureDefinition-sas-sos-organization-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-organization-aggregator.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c52550)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS on element Organization.type could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[47]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS on element Organization.type could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/sas&#8203;/StructureDefinition&#8203;/sas-sos-organization-aggregator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-schedule-aggregator"> </a>
+<h2><a href="StructureDefinition-sas-sos-schedule-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-schedule-aggregator.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c42560)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c65989)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/sas&#8203;/StructureDefinition&#8203;/sas-sos-schedule-aggregator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_StructureDefinition-sas-sos-slot-aggregator"> </a>
+<h2><a href="StructureDefinition-sas-sos-slot-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-slot-aggregator.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c60199)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau on element Slot.meta.security could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation on element Slot.serviceType.coding could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason on element Slot.appointmentType.coding could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau on element Slot.meta.security could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation on element Slot.serviceType.coding could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[36]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason on element Slot.appointmentType.coding could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/sas&#8203;/StructureDefinition&#8203;/sas-sos-slot-aggregator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-appointmentreason"> </a>
+<h2><a href="ValueSet-sas-sos-valueset-appointmentreason.html">fsh-generated/resources/ValueSet-sas-sos-valueset-appointmentreason.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1619)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-participant-status"> </a>
+<h2><a href="ValueSet-sas-sos-valueset-participant-status.html">fsh-generated/resources/ValueSet-sas-sos-valueset-participant-status.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1789)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-typeconsultation"> </a>
+<h2><a href="ValueSet-sas-sos-valueset-typeconsultation.html">fsh-generated/resources/ValueSet-sas-sos-valueset-typeconsultation.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2250)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-typecreneau"> </a>
+<h2><a href="ValueSet-sas-sos-valueset-typecreneau.html">fsh-generated/resources/ValueSet-sas-sos-valueset-typecreneau.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau is unknown (from Tx-Server))</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1350)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.where(id = 'sas-sos-valueset-typecreneau')</b></td><td><b>warning</b></td><td><b>Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau</b> (<a href="qa-tx.html#l23">see Tx log</a>)</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-service-acces-aux-soins_IG-service-acces-aux-soins_fsh-generated_resources_ValueSet-sas-sos-valueset-typeidentifiant"> </a>
+<h2><a href="ValueSet-sas-sos-valueset-typeidentifiant.html">fsh-generated/resources/ValueSet-sas-sos-valueset-typeidentifiant.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1678)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -547,6 +821,56 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-FrSlotAgregateur.html">fsh-generated/resources/StructureDefinition-FrSlotAgregateur.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-appointment.html">fsh-generated/resources/StructureDefinition-sas-sos-appointment.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-appointment.html">fsh-generated/resources/StructureDefinition-sas-sos-appointment.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-appointment.html">fsh-generated/resources/StructureDefinition-sas-sos-appointment.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-appointment.html">fsh-generated/resources/StructureDefinition-sas-sos-appointment.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-location-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-location-aggregator.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-location-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-location-aggregator.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-organization-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-organization-aggregator.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-schedule-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-schedule-aggregator.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-schedule-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-schedule-aggregator.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-sas-sos-slot-aggregator.html">fsh-generated/resources/StructureDefinition-sas-sos-slot-aggregator.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_SHAREABLE_MISSING"> </a>
+<h2>VALUESET_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-sas-sos-valueset-appointmentreason.html">fsh-generated/resources/ValueSet-sas-sos-valueset-appointmentreason.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-sas-sos-valueset-participant-status.html">fsh-generated/resources/ValueSet-sas-sos-valueset-participant-status.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-sas-sos-valueset-typeconsultation.html">fsh-generated/resources/ValueSet-sas-sos-valueset-typeconsultation.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-sas-sos-valueset-typecreneau.html">fsh-generated/resources/ValueSet-sas-sos-valueset-typecreneau.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-sas-sos-valueset-typeidentifiant.html">fsh-generated/resources/ValueSet-sas-sos-valueset-typeidentifiant.json</a></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 </body>

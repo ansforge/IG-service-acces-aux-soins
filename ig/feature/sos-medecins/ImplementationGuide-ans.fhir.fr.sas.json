@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2023-10-20T12:59:44+00:00",
+  "date" : "2023-11-07T15:58:12+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -635,6 +635,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sas-sos-valueset-appointmentreason"
+      },
+      "name" : "Appointment reason SAS SOS",
+      "description" : "Appointment reason SAS SOS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -642,6 +654,18 @@
       },
       "name" : "BundleAgregateur",
       "description" : "Profil de Bundle qui représente le flux de réponse contenant les créneaux disponibles dans le cadre du service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sas-sos-bundle-aggregator"
+      },
+      "name" : "BundleAgregateurSOS",
+      "description" : "Bundle Agrégateur SAS SOS",
       "exampleBoolean" : false
     },
     {
@@ -662,10 +686,43 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/sas-sos-appointment"
+      },
+      "name" : "FrAppointmentSASSOS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/FrLocationAgregateur"
       },
       "name" : "FrLocationAgregateur",
       "description" : "Profil de Location, dérivé de FrLocation, pour le service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sas-sos-location-aggregator"
+      },
+      "name" : "FrLocationAgregateurSOS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sas-sos-organization-aggregator"
+      },
+      "name" : "FrOrganizationAgregateurSOS",
       "exampleBoolean" : false
     },
     {
@@ -710,10 +767,80 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/sas-sos-schedule-aggregator"
+      },
+      "name" : "FrScheduleAgregateurSOS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/FrSlotAgregateur"
       },
       "name" : "FrSlotAgregateur",
       "description" : "Profil de Slot, dérivé de FrSlot, pour le service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sas-sos-slot-aggregator"
+      },
+      "name" : "FrSlotAgregateurSOS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sas-sos-valueset-participant-status"
+      },
+      "name" : "Statut participant SAS SOS",
+      "description" : "Statut du participant RDV SAS SOS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sas-sos-valueset-typeconsultation"
+      },
+      "name" : "Type consultation SAS SOS",
+      "description" : "Type de consultations SAS SOS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sas-sos-valueset-typecreneau"
+      },
+      "name" : "Type créneaux SAS SOS",
+      "description" : "Type de Créneaux SAS SOS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sas-sos-valueset-typeidentifiant"
+      },
+      "name" : "Type identifiant SAS SOS",
+      "description" : "Type d'identifiant SAS SOS",
       "exampleBoolean" : false
     }],
     "page" : {
