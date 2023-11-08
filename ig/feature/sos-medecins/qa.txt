@@ -3,7 +3,7 @@
 
 err = 14, warn = 63, info = 28
 IG Publisher Version: 1.5.2
-Generated Tue Nov 07 16:25:49 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
+Generated Wed Nov 08 09:42:51 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
  Build Errors : 1 / 9 / 0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/fsh-generated/resources/StructureDefinition-BundleAgregateur : 2 / 1 / 1
