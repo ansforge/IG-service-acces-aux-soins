@@ -81,7 +81,10 @@
       "name" : "AppointmentReasonSASSOS",
       "title" : "Appointment reason SAS SOS",
       "description" : "Appointment reason SAS SOS",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"]
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"],
+      "uses" : {
+      },
+      "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status",
@@ -90,7 +93,10 @@
       "name" : "ParticipantStatusSASSOS",
       "title" : "Statut participant SAS SOS",
       "description" : "Statut du participant RDV SAS SOS",
-      "systems" : ["http://hl7.org/fhir/participationstatus"]
+      "systems" : ["http://hl7.org/fhir/participationstatus"],
+      "uses" : {
+      },
+      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation",
@@ -99,7 +105,10 @@
       "name" : "TypeConsultationSASSOS",
       "title" : "Type consultation SAS SOS",
       "description" : "Type de consultations SAS SOS",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau",
@@ -110,7 +119,10 @@
       "description" : "Type de Créneaux SAS SOS",
       "systems" : [
         "https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant",
@@ -119,7 +131,10 @@
       "name" : "TypeIdentifiantSASSOS",
       "title" : "Type identifiant SAS SOS",
       "description" : "Type d'identifiant SAS SOS",
-      "systems" : ["http://interopsante.org/fhir/CodeSystem/fr-v2-0203"]
+      "systems" : ["http://interopsante.org/fhir/CodeSystem/fr-v2-0203"],
+      "uses" : {
+      },
+      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS"
     }
   ]
 }
