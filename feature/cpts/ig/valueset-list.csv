@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason,0.1.0,draft,,AppointmentReasonSASSOS,Appointment reason SAS SOS,"Appointment reason SAS SOS",,"THO (V2)"
+https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status,0.1.0,draft,,ParticipantStatusSASSOS,Statut participant SAS SOS,"Statut du participant RDV SAS SOS",,"hl7.fhir.r4.core"
+https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation,0.1.0,draft,,TypeConsultationSASSOS,Type consultation SAS SOS,"Type de consultations SAS SOS",,"THO (V3)"
+https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau,0.1.0,draft,,TypeCreneauSASSOS,Type créneaux SAS SOS,"Type de Créneaux SAS SOS",,"Other"
+https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant,0.1.0,draft,,TypeIdentifiantSASSOS,Type identifiant SAS SOS,"Type d'identifiant SAS SOS",,"hl7.fhir.fr.core"
