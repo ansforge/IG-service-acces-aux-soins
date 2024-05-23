@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TypeIdentifiantSASSOS"] ; # 
   fhir:title [ fhir:v "Type identifiant SAS SOS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-23T12:51:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-23T13:22:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
