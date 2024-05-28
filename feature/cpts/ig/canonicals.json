@@ -56,6 +56,20 @@
     "name" : "ServicedAccsauxSoins"
   },
   {
+    "id" : "sas-cpts-slot-aggregator",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator",
+    "version" : "0.1.0",
+    "name" : "FrSlotAgregateurCPTS"
+  },
+  {
+    "id" : "sas-cpts-slot-servicetype-aggregator",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator",
+    "version" : "0.1.0",
+    "name" : "SASServiceType-R5"
+  },
+  {
     "id" : "sas-sos-appointment",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-appointment",

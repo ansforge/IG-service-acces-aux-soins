@@ -10,7 +10,7 @@
   <name value="ServicedAccsauxSoins"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2024-05-23T13:22:54+00:00"/>
+  <date value="2024-05-28T14:23:52+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -614,9 +614,31 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sas-cpts-slot-aggregator"/>
+      </reference>
+      <name value="FrSlotAgregateurCPTS"/>
+      <description value="Profil de Slot, dérivé de FrSlot, pour le service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins), dans le cadre du cas d'usage CPTS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/sas-sos-slot-aggregator"/>
       </reference>
       <name value="FrSlotAgregateurSOS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sas-cpts-slot-servicetype-aggregator"/>
+      </reference>
+      <name value="SASServiceType-R5"/>
+      <description value="Test extension R5"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

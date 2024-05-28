@@ -84,6 +84,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"],
       "uses" : {
       },
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
       "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
@@ -122,6 +123,7 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
       "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
