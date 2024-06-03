@@ -106,10 +106,16 @@
         "title": "FrSlotAgregateurSOS"
       }
     ],
+    "HealthcareService": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator",
+        "title": "FrHealthcareServiceAgregateurCPTS"
+      }
+    ],
     "Organization": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator",
-        "title": "FrOrganizationAgregateurSOS"
+        "title": "FrOrganizationAgregateurCPTS"
       }
     ]
   },
@@ -194,6 +200,7 @@
       "Schedule"
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrServiceTypeDuration": [
+      "HealthcareService",
       "PractitionerRole",
       "Schedule"
     ],

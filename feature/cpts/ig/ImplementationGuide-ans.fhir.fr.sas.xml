@@ -10,7 +10,7 @@
   <name value="ServicedAccsauxSoins"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2024-05-28T14:23:52+00:00"/>
+  <date value="2024-06-03T14:45:40+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -529,6 +529,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sas-cpts-healthcareservice-aggregator"/>
+      </reference>
+      <name value="FrHealthcareServiceAgregateurCPTS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/FrLocationAgregateur"/>
       </reference>
       <name value="FrLocationAgregateur"/>
@@ -551,6 +561,16 @@
       </extension>
       <reference>
         <reference value="StructureDefinition/sas-sos-organization-aggregator"/>
+      </reference>
+      <name value="FrOrganizationAgregateurCPTS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sas-cpts-organization-aggregator"/>
       </reference>
       <name value="FrOrganizationAgregateurSOS"/>
       <exampleBoolean value="false"/>

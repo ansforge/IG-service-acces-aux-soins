@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-05-28T14:23:52+00:00",
+  "date" : "2024-06-03T14:45:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -697,6 +697,17 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/sas-cpts-healthcareservice-aggregator"
+      },
+      "name" : "FrHealthcareServiceAgregateurCPTS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/FrLocationAgregateur"
       },
       "name" : "FrLocationAgregateur",
@@ -721,6 +732,17 @@
       }],
       "reference" : {
         "reference" : "StructureDefinition/sas-sos-organization-aggregator"
+      },
+      "name" : "FrOrganizationAgregateurCPTS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sas-cpts-organization-aggregator"
       },
       "name" : "FrOrganizationAgregateurSOS",
       "exampleBoolean" : false

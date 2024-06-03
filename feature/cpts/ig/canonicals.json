@@ -56,6 +56,20 @@
     "name" : "ServicedAccsauxSoins"
   },
   {
+    "id" : "sas-cpts-healthcareservice-aggregator",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator",
+    "version" : "0.1.0",
+    "name" : "FrHealthcareServiceAgregateurCPTS"
+  },
+  {
+    "id" : "sas-cpts-organization-aggregator",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-organization-aggregator",
+    "version" : "0.1.0",
+    "name" : "FrOrganizationAgregateurSOS"
+  },
+  {
     "id" : "sas-cpts-slot-aggregator",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator",
@@ -95,7 +109,7 @@
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator",
     "version" : "0.1.0",
-    "name" : "FrOrganizationAgregateurSOS"
+    "name" : "FrOrganizationAgregateurCPTS"
   },
   {
     "id" : "sas-sos-schedule-aggregator",

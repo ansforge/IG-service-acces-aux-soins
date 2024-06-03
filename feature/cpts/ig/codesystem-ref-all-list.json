@@ -178,8 +178,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.487"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-participationstatus.html" : "ParticipationStatus",
-      "ValueSet-sas-sos-valueset-participant-status.html" : "Statut participant SAS SOS"
+      "ValueSet-sas-sos-valueset-participant-status.html" : "Statut participant SAS SOS",
+      "http://hl7.org/fhir/R4/valueset-participationstatus.html" : "ParticipationStatus"
     },
     {
       "url" : "http://hl7.org/fhir/resource-types",
@@ -345,6 +345,18 @@
       "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/program",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "Program",
+      "title" : "Program",
+      "description" : "This value set defines an example set of codes that could be can be used to classify groupings of service-types/specialties.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1384"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-program.html" : "Program"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/service-category",
       "version" : "1.1.0",
       "status" : "draft",
@@ -355,6 +367,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-service-category.html" : "Service category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/service-provision-conditions",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ServiceProvisionConditions",
+      "title" : "ServiceProvisionConditions",
+      "description" : "The code(s) that detail the conditions under which the healthcare service is available/offered.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1143"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-service-provision-conditions.html" : "ServiceProvisionConditions"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/service-referral-method",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ReferralMethod",
+      "title" : "ReferralMethod",
+      "description" : "The methods of referral can be used when referring to a specific HealthCareService resource.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1142"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-service-referral-method.html" : "ReferralMethod"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/service-type",
@@ -403,8 +439,8 @@
       "oids" : ["2.16.840.1.113883.18.169"],
       "uses" : {
       },
-      "ValueSet-sas-sos-valueset-appointmentreason.html" : "Appointment reason SAS SOS",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes",
+      "ValueSet-sas-sos-valueset-appointmentreason.html" : "Appointment reason SAS SOS"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",

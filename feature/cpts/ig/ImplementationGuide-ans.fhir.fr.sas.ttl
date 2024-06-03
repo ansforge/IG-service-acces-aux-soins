@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ServicedAccsauxSoins"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-28T14:23:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-03T14:45:40+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -607,6 +607,17 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator> ;
+         fhir:reference [ fhir:v "StructureDefinition/sas-cpts-healthcareservice-aggregator" ]
+       ] ;
+       fhir:name [ fhir:v "FrHealthcareServiceAgregateurCPTS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrLocationAgregateur> ;
          fhir:reference [ fhir:v "StructureDefinition/FrLocationAgregateur" ]
        ] ;
@@ -632,6 +643,17 @@
        fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator> ;
          fhir:reference [ fhir:v "StructureDefinition/sas-sos-organization-aggregator" ]
+       ] ;
+       fhir:name [ fhir:v "FrOrganizationAgregateurCPTS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-organization-aggregator> ;
+         fhir:reference [ fhir:v "StructureDefinition/sas-cpts-organization-aggregator" ]
        ] ;
        fhir:name [ fhir:v "FrOrganizationAgregateurSOS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
