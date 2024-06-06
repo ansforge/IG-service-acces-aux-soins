@@ -1,5 +1,12 @@
 [
   {
+    "id" : "sas-cpts-slot-servicetype-aggregator",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType",
+    "version" : "0.1.0",
+    "name" : "SASServiceType-R5"
+  },
+  {
     "id" : "BundleAgregateur",
     "type" : "StructureDefinition",
     "url" : "http://sas.fr/fhir/StructureDefinition/BundleAgregateur",
@@ -75,13 +82,6 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator",
     "version" : "0.1.0",
     "name" : "FrSlotAgregateurCPTS"
-  },
-  {
-    "id" : "sas-cpts-slot-servicetype-aggregator",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator",
-    "version" : "0.1.0",
-    "name" : "SASServiceType-R5"
   },
   {
     "id" : "sas-sos-appointment",

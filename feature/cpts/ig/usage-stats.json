@@ -5,7 +5,7 @@
   "jurisdiction": "FR",
   "extensions": [
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator",
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType",
       "title": "SASServiceType-R5",
       "types": [
         "CodeableConcept",
@@ -120,6 +120,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType": [
+      "Slot.serviceType"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -203,9 +206,6 @@
       "HealthcareService",
       "PractitionerRole",
       "Schedule"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator": [
-      "Slot.serviceType"
     ]
   }
 }

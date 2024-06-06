@@ -1,9 +1,9 @@
 ServicedAccsauxSoins : Validation Results
 =========================================
 
-err = 14, warn = 39, info = 44
+err = 17, warn = 39, info = 44
 IG Publisher Version: 1.6.10
-Generated Wed Jun 05 16:12:17 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
+Generated Thu Jun 06 08:16:28 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
  Build Errors : 1 / 11 / 0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-BundleAgregateur : 2 / 1 / 1
@@ -16,7 +16,7 @@ Generated Wed Jun 05 16:12:17 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-healthcareservice-aggregator : 0 / 1 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-organization-aggregator : 0 / 1 / 4
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-aggregator : 0 / 1 / 2
- /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-servicetype-aggregator : 0 / 2 / 1
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-servicetype-aggregator : 3 / 2 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-sos-appointment : 0 / 1 / 5
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-sos-bundle-aggregator : 0 / 1 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-sos-location-aggregator : 0 / 1 / 5
@@ -111,8 +111,11 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 INFORMATION: StructureDefinition/sas-cpts-slot-aggregator: StructureDefinition.snapshot.element[24].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-sas-cpts-slot-servicetype-aggregator.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType'): Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-servicetype-aggregator.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType)
 WARNING: StructureDefinition/sas-cpts-slot-servicetype-aggregator: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition/sas-cpts-slot-servicetype-aggregator: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType'): The Implementation Guide contains no examples for this extension
+ERROR: /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-servicetype-aggregator: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator vs http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType
 == fsh-generated/resources/StructureDefinition-sas-sos-appointment.json ==
 INFORMATION: StructureDefinition/sas-sos-appointment: StructureDefinition.snapshot.element[36].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/sas-sos-appointment: StructureDefinition.snapshot.element[47].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk

@@ -126,7 +126,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Slot.serviceType.extension:sas-servicetype-r5","Slot.serviceType.extension","sas-servicetype-r5","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator]]} {[]}
+"Slot.serviceType.extension:sas-servicetype-r5","Slot.serviceType.extension","sas-servicetype-r5","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType]]} {[]}
 ","Extension","Test extension R5","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
