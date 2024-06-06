@@ -123,7 +123,7 @@ package IG #DDDDDD{
              Slot.serviceType:referencecpts => [0..*]
              Slot.serviceType:referencecpts.extension => [1..None]
              Slot.serviceType:referencecpts.extension:sas-servicetype-r5 => <&plus>[1..1]
-             Slot.serviceType:referencecpts.extension:sas-servicetype-r5.value[x]:valueReference => <&plus>[None..None]
+             Slot.serviceType:referencecpts.extension:sas-servicetype-r5.value[x] => <&plus>[None..None]
              Slot.appointmentType.coding => [None..None]
              Slot.schedule => [None..None]
              Slot.status => [None..None]
@@ -218,7 +218,6 @@ package IG #DDDDDD{
           Extension.extension => [None..0]
           Extension.url => [None..None]
           Extension.value[x] => [None..None]
-          Extension.value[x]:valueReference => [0..1]
          }
      }
      package valueset #PaleVioletRed{
