@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ServicedAccsauxSoins"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-06T12:20:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-06T13:15:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -748,7 +748,7 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator> ;
          fhir:reference [ fhir:v "StructureDefinition/sas-cpts-slot-servicetype-aggregator" ]
        ] ;
-       fhir:name [ fhir:v "SASServiceType-R5" ] ;
+       fhir:name [ fhir:v "SASServiceTypeR5" ] ;
        fhir:description [ fhir:v "Extension créée afin de permettre la reference à la ressource HealthcareService. Cette extension implemente l'élément serviceType de R5 https://hl7.org/fhir/slot-definitions.html#Slot.serviceType" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

@@ -2,9 +2,9 @@
   {
     "id" : "sas-cpts-slot-servicetype-aggregator",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType.reference",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType",
     "version" : "0.1.0",
-    "name" : "SASServiceType-R5"
+    "name" : "SASServiceTypeR5"
   },
   {
     "id" : "BundleAgregateur",
