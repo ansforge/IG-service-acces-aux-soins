@@ -5,11 +5,9 @@
   "jurisdiction": "FR",
   "extensions": [
     {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType",
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType.reference",
       "title": "SASServiceType-R5",
       "types": [
-        "CodeableConcept",
-        "Reference",
         "base64Binary",
         "boolean",
         "canonical",
@@ -59,7 +57,8 @@
         "TriggerDefinition",
         "UsageContext",
         "Dosage",
-        "Meta"
+        "Meta",
+        "Reference"
       ]
     }
   ],
@@ -120,7 +119,7 @@
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType": [
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType.reference": [
       "Slot.serviceType"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [

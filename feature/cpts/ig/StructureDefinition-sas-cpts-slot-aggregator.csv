@@ -35,7 +35,7 @@ This element can be used to indicate where the current master source of a resour
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Slot.meta.security","Slot.meta.security","","","",0,*,"","","Y","Coding {[]} {[]}
-","Security Labels applied to this resource","Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.","The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"required","type de créneau : public, pro, SNP, CPTS","https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau","",,,,"Meta.security",0,*,"ele-1
+","type de créneau : public, pro, SNP, CPTS","Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.","The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau","",,,,"Meta.security",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Slot.meta.tag","Slot.meta.tag","","","",0,*,"","","Y","Coding {[]} {[]}
@@ -126,8 +126,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Slot.serviceType.extension:sas-servicetype-r5","Slot.serviceType.extension","sas-servicetype-r5","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType]]} {[]}
-","Extension","Test extension R5","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"Slot.serviceType.extension:sas-servicetype-r5","Slot.serviceType.extension","sas-servicetype-r5","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType.reference]]} {[]}
+","Extension","Extension créée afin de permettre la reference à la ressource HealthcareService. Cette extension implemente l'élément serviceType de R5 https://hl7.org/fhir/slot-definitions.html#Slot.serviceType","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Slot.serviceType.coding","Slot.serviceType.coding","","","",0,*,"","","Y","Coding {[]} {[]}
