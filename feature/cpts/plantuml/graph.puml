@@ -226,6 +226,10 @@ package IG #DDDDDD{
 
      FrSlotAgregateurCPTS -[#black,dotted,thickness=2]-> TypeCreneauSASSOS
 
+        class CategorieEtablissementSAS  
+
+     FrSlotAgregateurCPTS -[#black,dotted,thickness=2]-> CategorieEtablissementSAS
+
         class AppointmentReasonSASSOS  
 
      FrSlotAgregateurCPTS -[#black,dotted,thickness=2]-> AppointmentReasonSASSOS

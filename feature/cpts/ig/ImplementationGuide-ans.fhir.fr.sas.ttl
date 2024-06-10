@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ServicedAccsauxSoins"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-06T15:04:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-10T15:12:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -577,6 +577,18 @@
        ] ;
        fhir:name [ fhir:v "BundleAgregateurSOS" ] ;
        fhir:description [ fhir:v "Bundle Agrégateur SAS SOS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-categorieetablissement> ;
+         fhir:reference [ fhir:v "ValueSet/sas-valueset-categorieetablissement" ]
+       ] ;
+       fhir:name [ fhir:v "Catégorie établissement SAS" ] ;
+       fhir:description [ fhir:v "Catégorie d'établissement utilisée dans contexte SAS - CPTS dans un premier temps" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

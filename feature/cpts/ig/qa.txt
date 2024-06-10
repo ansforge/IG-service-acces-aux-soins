@@ -1,9 +1,9 @@
 ServicedAccsauxSoins : Validation Results
 =========================================
 
-err = 17, warn = 38, info = 47
-IG Publisher Version: 1.6.10
-Generated Thu Jun 06 15:07:53 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
+err = 17, warn = 41, info = 44
+IG Publisher Version: 1.6.11
+Generated Mon Jun 10 15:15:29 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
  Build Errors : 1 / 11 / 0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-BundleAgregateur : 2 / 1 / 1
@@ -15,7 +15,7 @@ Generated Thu Jun 06 15:07:53 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrSlotAgregateur : 2 / 1 / 2
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-healthcareservice-aggregator : 0 / 1 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-organization-aggregator : 0 / 1 / 4
- /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-aggregator : 0 / 1 / 5
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-aggregator : 0 / 1 / 2
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-servicetype-aggregator : 3 / 1 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-sos-appointment : 0 / 1 / 5
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-sos-bundle-aggregator : 0 / 1 / 1
@@ -28,6 +28,7 @@ Generated Thu Jun 06 15:07:53 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ValueSet-sas-sos-valueset-typeconsultation : 0 / 1 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ValueSet-sas-sos-valueset-typecreneau : 0 / 3 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ValueSet-sas-sos-valueset-typeidentifiant : 0 / 1 / 1
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ValueSet-sas-valueset-categorieetablissement : 0 / 3 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sas-sos-appointment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -109,9 +110,6 @@ INFORMATION: StructureDefinition/sas-cpts-organization-aggregator: StructureDefi
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-organization-aggregator'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-sas-cpts-slot-aggregator.json ==
 INFORMATION: StructureDefinition/sas-cpts-slot-aggregator: StructureDefinition.snapshot.element[24].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/sas-cpts-slot-aggregator: StructureDefinition.snapshot.element[46].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/service-type|1.1.0
-INFORMATION: StructureDefinition/sas-cpts-slot-aggregator: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/service-type|1.1.0
-INFORMATION: StructureDefinition/sas-cpts-slot-aggregator: StructureDefinition.snapshot.element[46].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-sas-cpts-slot-servicetype-aggregator.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType'): Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-servicetype-aggregator.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-servicetype-aggregator) does not match the URL (http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType)
@@ -156,3 +154,7 @@ WARNING: ValueSet/sas-sos-valueset-typecreneau: ValueSet: Published value sets S
 WARNING: ValueSet.where(id = 'sas-sos-valueset-typecreneau'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau
 == fsh-generated/resources/ValueSet-sas-sos-valueset-typeidentifiant.json ==
 WARNING: ValueSet/sas-sos-valueset-typeidentifiant: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-sas-valueset-categorieetablissement.json ==
+WARNING: ValueSet/sas-valueset-categorieetablissement: ValueSet.compose.include[0]: Unknown System 'https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement' could not be found, so the code cannot be validated)
+WARNING: ValueSet/sas-valueset-categorieetablissement: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'sas-valueset-categorieetablissement'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement

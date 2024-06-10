@@ -159,5 +159,12 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant",
     "version" : "0.1.0",
     "name" : "TypeIdentifiantSASSOS"
+  },
+  {
+    "id" : "sas-valueset-categorieetablissement",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-categorieetablissement",
+    "version" : "0.1.0",
+    "name" : "CategorieEtablissementSAS"
   }
 ]

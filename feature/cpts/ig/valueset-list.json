@@ -46,6 +46,17 @@
       "title" : "Type identifiant SAS SOS",
       "description" : "Type d'identifiant SAS SOS",
       "systems" : ["http://interopsante.org/fhir/CodeSystem/fr-v2-0203"]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-categorieetablissement",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CategorieEtablissementSAS",
+      "title" : "Catégorie établissement SAS",
+      "description" : "Catégorie d'établissement utilisée dans contexte SAS - CPTS dans un premier temps",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement"
+      ]
     }
   ]
 }

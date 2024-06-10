@@ -138,6 +138,20 @@
       "uses" : {
       },
       "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-categorieetablissement",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CategorieEtablissementSAS",
+      "title" : "Catégorie établissement SAS",
+      "description" : "Catégorie d'établissement utilisée dans contexte SAS - CPTS dans un premier temps",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS"
     }
   ]
 }
