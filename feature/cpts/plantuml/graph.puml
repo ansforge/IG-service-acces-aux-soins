@@ -222,9 +222,9 @@ package IG #DDDDDD{
      }
      package valueset #PaleVioletRed{
 
-        class TypeCreneauSASSOS  
+        class TypeCreneauSASCPTS  
 
-     FrSlotAgregateurCPTS -[#black,dotted,thickness=2]-> TypeCreneauSASSOS
+     FrSlotAgregateurCPTS -[#black,dotted,thickness=2]-> TypeCreneauSASCPTS
 
         class CategorieEtablissementSAS  
 

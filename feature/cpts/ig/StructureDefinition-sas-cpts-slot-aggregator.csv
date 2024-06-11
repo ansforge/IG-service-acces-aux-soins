@@ -35,7 +35,7 @@ This element can be used to indicate where the current master source of a resour
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Slot.meta.security","Slot.meta.security","","","",0,*,"","","Y","Coding {[]} {[]}
-","type de créneau : public, pro, SNP, CPTS","Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.","The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau","",,,,"Meta.security",0,*,"ele-1
+","type de créneau : public, pro, SNP, CPTS","Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.","The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-cpts-valueset-typecreneau","",,,,"Meta.security",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Slot.meta.tag","Slot.meta.tag","","","",0,*,"","","Y","Coding {[]} {[]}

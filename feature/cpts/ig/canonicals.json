@@ -126,6 +126,13 @@
     "name" : "FrSlotAgregateurSOS"
   },
   {
+    "id" : "sas-cpts-valueset-typecreneau",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-cpts-valueset-typecreneau",
+    "version" : "0.1.0",
+    "name" : "TypeCreneauSASCPTS"
+  },
+  {
     "id" : "sas-sos-valueset-appointmentreason",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason",

@@ -1,6 +1,17 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-cpts-valueset-typecreneau",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TypeCreneauSASCPTS",
+      "title" : "Type créneaux SAS CPTS",
+      "description" : "Type de Créneaux SAS CPTS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau"
+      ]
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason",
       "version" : "0.1.0",
       "status" : "draft",

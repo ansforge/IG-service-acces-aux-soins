@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ServicedAccsauxSoins"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-10T15:12:05+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-11T07:35:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -786,6 +786,18 @@
        ] ;
        fhir:name [ fhir:v "Type consultation SAS SOS" ] ;
        fhir:description [ fhir:v "Type de consultations SAS SOS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-cpts-valueset-typecreneau> ;
+         fhir:reference [ fhir:v "ValueSet/sas-cpts-valueset-typecreneau" ]
+       ] ;
+       fhir:name [ fhir:v "Type créneaux SAS CPTS" ] ;
+       fhir:description [ fhir:v "Type de Créneaux SAS CPTS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

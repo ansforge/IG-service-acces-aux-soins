@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-10T15:12:05+00:00",
+  "date" : "2024-06-11T07:35:27+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -875,6 +875,18 @@
       },
       "name" : "Type consultation SAS SOS",
       "description" : "Type de consultations SAS SOS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sas-cpts-valueset-typecreneau"
+      },
+      "name" : "Type créneaux SAS CPTS",
+      "description" : "Type de Créneaux SAS CPTS",
       "exampleBoolean" : false
     },
     {
