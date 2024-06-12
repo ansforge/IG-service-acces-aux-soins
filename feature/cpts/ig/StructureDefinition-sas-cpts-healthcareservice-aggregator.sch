@@ -12,8 +12,7 @@
   <sch:pattern>
     <sch:title>f:HealthcareService</sch:title>
     <sch:rule context="f:HealthcareService">
-      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
-      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:providedBy) &gt;= 1">providedBy: minimum cardinality of 'providedBy' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
