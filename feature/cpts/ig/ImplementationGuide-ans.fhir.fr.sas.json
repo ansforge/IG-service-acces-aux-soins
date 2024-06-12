@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-11T07:35:27+00:00",
+  "date" : "2024-06-12T14:11:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -654,6 +654,18 @@
       },
       "name" : "BundleAgregateur",
       "description" : "Profil de Bundle qui représente le flux de réponse contenant les créneaux disponibles dans le cadre du service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sas-cpts-bundle-aggregator"
+      },
+      "name" : "BundleAgregateurCPTS",
+      "description" : "Bundle Agrégateur SAS CPTS",
       "exampleBoolean" : false
     },
     {

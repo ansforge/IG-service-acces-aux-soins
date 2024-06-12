@@ -96,9 +96,34 @@ package IG #DDDDDD{
              Slot.comment => [None..None]
         } 
 
+        class BundleAgregateurCPTS{
+
+             Bundle.type => [None..None]
+             Bundle.total => [1..None]
+             Bundle.link => [1..1]
+             Bundle.entry => [4..None]
+             Bundle.entry:slotAgregateurCPTS => [1..*]
+             Bundle.entry:slotAgregateurCPTS.fullUrl => [1..None]
+             Bundle.entry:slotAgregateurCPTS.resource => [None..None]
+             Bundle.entry:scheduleAgregateurCPTS => [1..*]
+             Bundle.entry:scheduleAgregateurCPTS.fullUrl => [1..None]
+             Bundle.entry:scheduleAgregateurCPTS.resource => [None..None]
+             Bundle.entry:practitionerAgregateur => [1..*]
+             Bundle.entry:practitionerAgregateur.fullUrl => [1..None]
+             Bundle.entry:practitionerAgregateur.resource => [None..None]
+             Bundle.entry:practitionerRole => [1..*]
+             Bundle.entry:practitionerRole.fullUrl => [1..None]
+             Bundle.entry:practitionerRole.resource => [None..None]
+             Bundle.entry:healthcareserviceCPTS => [0..*]
+             Bundle.entry:healthcareserviceCPTS.fullUrl => [1..None]
+             Bundle.entry:healthcareserviceCPTS.resource => [None..None]
+             Bundle.entry:organizationAgregateurCPTS => [0..*]
+             Bundle.entry:organizationAgregateurCPTS.fullUrl => [1..None]
+             Bundle.entry:organizationAgregateurCPTS.resource => [None..None]
+        } 
+
         class FrHealthcareServiceAgregateurCPTS{
 
-             HealthcareService => [None..None]
              HealthcareService.identifier => [1..1]
              HealthcareService.providedBy => [1..None]
         } 
@@ -113,7 +138,6 @@ package IG #DDDDDD{
 
         class FrSlotAgregateurCPTS{
 
-             Slot => [None..None]
              Slot.meta.security => [None..None]
              Slot.serviceType => [None..None]
              Slot.serviceType.extension:sas-servicetype-r5 => <&plus>[0..1]
@@ -284,6 +308,10 @@ package "Ressources de base" #palegreen {
  class "http://interopsante.org/fhir/StructureDefinition/FrSlot" as  class86363a39b418154a968adc9b5da3fe9c 
 
     class86363a39b418154a968adc9b5da3fe9c --> FrSlotAgregateur
+
+ class "Bundle" as  class94c51f19c37f96ed231f5a0ae512b2a8 
+
+    class94c51f19c37f96ed231f5a0ae512b2a8 --> BundleAgregateurCPTS
 
  class "http://interopsante.org/fhir/StructureDefinition/FrHealthcareService" as  class5d328cad2fd8b92e4c266f5123e4a872 
 

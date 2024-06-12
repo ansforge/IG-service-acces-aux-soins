@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ServicedAccsauxSoins"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-11T07:35:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-12T14:11:34+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -565,6 +565,18 @@
        ] ;
        fhir:name [ fhir:v "BundleAgregateur" ] ;
        fhir:description [ fhir:v "Profil de Bundle qui représente le flux de réponse contenant les créneaux disponibles dans le cadre du service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-bundle-aggregator> ;
+         fhir:reference [ fhir:v "StructureDefinition/sas-cpts-bundle-aggregator" ]
+       ] ;
+       fhir:name [ fhir:v "BundleAgregateurCPTS" ] ;
+       fhir:description [ fhir:v "Bundle Agrégateur SAS CPTS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

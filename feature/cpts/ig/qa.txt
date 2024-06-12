@@ -1,9 +1,9 @@
 ServicedAccsauxSoins : Validation Results
 =========================================
 
-err = 17, warn = 44, info = 44
+err = 17, warn = 45, info = 44
 IG Publisher Version: 1.6.11
-Generated Tue Jun 11 07:38:47 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
+Generated Wed Jun 12 14:14:50 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
  Build Errors : 1 / 11 / 0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-BundleAgregateur : 2 / 1 / 1
@@ -13,6 +13,7 @@ Generated Tue Jun 11 07:38:47 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur : 2 / 2 / 7
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrScheduleAgregateur : 2 / 1 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrSlotAgregateur : 2 / 1 / 2
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-bundle-aggregator : 0 / 1 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-healthcareservice-aggregator : 0 / 1 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-organization-aggregator : 0 / 1 / 4
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-aggregator : 0 / 1 / 2
@@ -100,6 +101,8 @@ ERROR: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition/F
 INFORMATION: StructureDefinition/FrSlotAgregateur: StructureDefinition.snapshot.element[24].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition/FrSlotAgregateur'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrSlotAgregateur: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrSlotAgregateur vs http://sas.fr/fhir/StructureDefinition/FrSlotAgregateur
+== fsh-generated/resources/StructureDefinition-sas-cpts-bundle-aggregator.json ==
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-bundle-aggregator'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-sas-cpts-healthcareservice-aggregator.json ==
 INFORMATION: StructureDefinition/sas-cpts-healthcareservice-aggregator: StructureDefinition.snapshot.element[17].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/sas-cpts-healthcareservice-aggregator: StructureDefinition.snapshot.element[56].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
