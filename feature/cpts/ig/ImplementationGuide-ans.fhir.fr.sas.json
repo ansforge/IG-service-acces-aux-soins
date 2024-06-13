@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-12T15:35:22+00:00",
+  "date" : "2024-06-13T07:18:59+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -691,6 +691,18 @@
       "name" : "Catégorie établissement SAS",
       "description" : "Catégorie d'établissement utilisée dans contexte SAS - CPTS dans un premier temps",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/ExampleOrgaCPTS"
+      },
+      "name" : "ExampleOrgaCPTS",
+      "description" : "Exemple d'organisation CPTS",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"
     },
     {
       "extension" : [{
