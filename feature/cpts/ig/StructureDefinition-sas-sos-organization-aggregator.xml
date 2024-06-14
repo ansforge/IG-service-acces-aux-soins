@@ -18,7 +18,7 @@
   <version value="0.1.0"/>
   <name value="FrOrganizationAgregateurCPTS"/>
   <status value="draft"/>
-  <date value="2024-06-13T07:18:59+00:00"/>
+  <date value="2024-06-14T14:49:07+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -615,7 +615,7 @@
         <key value="FINESS-invariant"/>
         <severity value="error"/>
         <human value="Le numéro FINESS doit être préfixé par 1 suivi de 9 caractères numériques"/>
-        <expression value="value.matches('^3[0-9]{9}$')"/>
+        <expression value="value.matches('^1[0-9]{9}$')"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"/>
       </constraint>
       <isSummary value="true"/>
@@ -3919,7 +3919,7 @@
         <key value="FINESS-invariant"/>
         <severity value="error"/>
         <human value="Le numéro FINESS doit être préfixé par 1 suivi de 9 caractères numériques"/>
-        <expression value="value.matches('^3[0-9]{9}$')"/>
+        <expression value="value.matches('^1[0-9]{9}$')"/>
         <source value="https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"/>
       </constraint>
     </element>

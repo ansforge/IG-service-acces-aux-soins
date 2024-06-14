@@ -4750,12 +4750,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "sas-cpts-slot-aggregator","Slot.serviceType:referencecpts.extension:sas-servicetype-r5.url","Slot.serviceType.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"sas-cpts-slot-aggregator","Slot.serviceType:referencecpts.extension:sas-servicetype-r5.value[x]","Slot.serviceType.extension.value[x]","","","",1,1,"","","","Reference {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","Extension.value[x]",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"sas-cpts-slot-aggregator","Slot.serviceType:referencecpts.extension:sas-servicetype-r5.value[x]:valueReference","Slot.serviceType.extension.value[x]","valueReference","","",1,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator]]}
+"sas-cpts-slot-aggregator","Slot.serviceType:referencecpts.extension:sas-servicetype-r5.value[x]","Slot.serviceType.extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator]]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -4828,12 +4823,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "sas-cpts-slot-servicetype-aggregator","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"sas-cpts-slot-servicetype-aggregator","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","Reference {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","Extension.value[x]",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"sas-cpts-slot-servicetype-aggregator","Extension.value[x]:valueReference","Extension.value[x]","valueReference","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService]]}
+"sas-cpts-slot-servicetype-aggregator","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService]]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -6362,7 +6352,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "sas-sos-organization-aggregator","Organization.identifier","Organization.identifier","","","",1,1,"","","Y","Identifier {[]} {[]}
 ","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-FINESS-invariant:Le numéro FINESS doit être préfixé par 1 suivi de 9 caractères numériques {value.matches('^3[0-9]{9}$')}"
+FINESS-invariant:Le numéro FINESS doit être préfixé par 1 suivi de 9 caractères numériques {value.matches('^1[0-9]{9}$')}"
 "sas-sos-organization-aggregator","Organization.identifier.id","Organization.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "sas-sos-organization-aggregator","Organization.identifier.extension","Organization.identifier.extension","","extensions
