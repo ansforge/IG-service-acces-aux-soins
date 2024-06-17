@@ -10,7 +10,7 @@
   <name value="ServicedAccsauxSoins"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2024-06-14T14:49:07+00:00"/>
+  <date value="2024-06-17T12:56:05+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -527,6 +527,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/ExampleHealthcareServiceCPTS"/>
+      </reference>
+      <name value="ExampleHealthcareServiceCPTS"/>
+      <description value="Exemple healthcare service CPTS"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -535,6 +546,28 @@
       <name value="ExampleOrgaCPTS"/>
       <description value="Exemple d'organisation CPTS"/>
       <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Schedule"/>
+      </extension>
+      <reference>
+        <reference value="Schedule/ExampleScheduleCPTS"/>
+      </reference>
+      <name value="ExampleScheduleCPTS"/>
+      <description value="Exemple ressource schedule CPTS"/>
+      <exampleCanonical value="http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Slot"/>
+      </extension>
+      <reference>
+        <reference value="Slot/ExampleSlotCPTS"/>
+      </reference>
+      <name value="ExampleSlotCPTS"/>
+      <description value="Exemple ressource slot CPTS"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

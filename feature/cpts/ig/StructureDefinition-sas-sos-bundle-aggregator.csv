@@ -388,7 +388,7 @@ Note that the fullUrl is not the same as the canonical URL - it's an absolute ur
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
 "Bundle.entry:scheduleAgregateurSOS.resource","Bundle.entry.resource","","Availability
-","",0,1,"","","","Schedule {[CanonicalType[http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur]]} {[]}
+","",0,1,"","","","Schedule {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-schedule-aggregator]]} {[]}
 ","A container for slots of time that may be available for booking appointments","A container for slots of time that may be available for booking appointments.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","n/a"
 "Bundle.entry:scheduleAgregateurSOS.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ServicedAccsauxSoins"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-14T14:49:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-17T12:56:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -605,6 +605,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "HealthcareService" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/HealthcareService/ExampleHealthcareServiceCPTS> ;
+         fhir:reference [ fhir:v "HealthcareService/ExampleHealthcareServiceCPTS" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleHealthcareServiceCPTS" ] ;
+       fhir:description [ fhir:v "Exemple healthcare service CPTS" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
@@ -616,6 +631,36 @@
        fhir:example [
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"^^xsd:anyURI ;
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Schedule" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/Schedule/ExampleScheduleCPTS> ;
+         fhir:reference [ fhir:v "Schedule/ExampleScheduleCPTS" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleScheduleCPTS" ] ;
+       fhir:description [ fhir:v "Exemple ressource schedule CPTS" ] ;
+       fhir:example [
+         fhir:v "http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur"^^xsd:anyURI ;
+         fhir:link <http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Slot" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/Slot/ExampleSlotCPTS> ;
+         fhir:reference [ fhir:v "Slot/ExampleSlotCPTS" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleSlotCPTS" ] ;
+       fhir:description [ fhir:v "Exemple ressource slot CPTS" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator>
        ]
      ] [
        fhir:extension ( [

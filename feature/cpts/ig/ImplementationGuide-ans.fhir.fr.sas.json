@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-14T14:49:07+00:00",
+  "date" : "2024-06-17T12:56:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -695,6 +695,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "HealthcareService"
+      }],
+      "reference" : {
+        "reference" : "HealthcareService/ExampleHealthcareServiceCPTS"
+      },
+      "name" : "ExampleHealthcareServiceCPTS",
+      "description" : "Exemple healthcare service CPTS",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -703,6 +715,30 @@
       "name" : "ExampleOrgaCPTS",
       "description" : "Exemple d'organisation CPTS",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Schedule"
+      }],
+      "reference" : {
+        "reference" : "Schedule/ExampleScheduleCPTS"
+      },
+      "name" : "ExampleScheduleCPTS",
+      "description" : "Exemple ressource schedule CPTS",
+      "exampleCanonical" : "http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Slot"
+      }],
+      "reference" : {
+        "reference" : "Slot/ExampleSlotCPTS"
+      },
+      "name" : "ExampleSlotCPTS",
+      "description" : "Exemple ressource slot CPTS",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator"
     },
     {
       "extension" : [{
