@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-17T14:24:56+00:00",
+  "date" : "2024-06-17T17:07:43+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -727,6 +727,30 @@
       "name" : "ExampleOrgaCPTS",
       "description" : "Exemple d'organisation CPTS",
       "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/ExamplePractitioner"
+      },
+      "name" : "ExamplePractitioner",
+      "description" : "Exemple practitioner flux agrégateur",
+      "exampleCanonical" : "http://sas.fr/fhir/StructureDefinition/FrPractitionerAgregateur"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/ExamplePractitionerRoleAgregateur"
+      },
+      "name" : "ExamplePractitionerRoleAgregateur",
+      "description" : "Exemple PractitionerRole flux agrégateur",
+      "exampleCanonical" : "http://sas.fr/fhir/StructureDefinition/FrPractitionerRoleExerciceAgregateur"
     },
     {
       "extension" : [{

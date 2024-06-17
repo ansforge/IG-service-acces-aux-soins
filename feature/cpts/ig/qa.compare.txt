@@ -1,21 +1,23 @@
 ServicedAccsauxSoins : Validation Results
 =========================================
 
-err = 17, warn = 40, info = 47
+err = 17, warn = 39, info = 48
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.sas#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
  Build Errors : 1 / 10 / 0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/HealthcareService-ExampleHealthcareServiceCPTS : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Organization-ExampleOrgaCPTS : 0 / 0 / 2
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Practitioner-ExamplePractitioner : 0 / 0 / 2
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/PractitionerRole-ExamplePractitionerRoleAgregateur : 0 / 1 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Schedule-ExampleScheduleCPTS : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/SearchParameter-cptsslot-sp-servicetype : 0 / 1 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Slot-ExampleSlotCPTS : 0 / 0 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-BundleAgregateur : 2 / 1 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrAppointmentSAS : 2 / 2 / 8
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrLocationAgregateur : 2 / 1 / 3
- /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrPractitionerAgregateur : 2 / 2 / 7
- /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur : 2 / 2 / 7
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrPractitionerAgregateur : 2 / 1 / 7
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur : 2 / 1 / 7
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrScheduleAgregateur : 2 / 0 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrSlotAgregateur : 2 / 1 / 2
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-bundle-aggregator : 0 / 1 / 1
@@ -53,6 +55,10 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas.json ==
 == fsh-generated/resources/Organization-ExampleOrgaCPTS.json ==
 INFORMATION: Organization/ExampleOrgaCPTS: Organization.identifier[0].type: Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-location-identifier-type|1.0.1
+== fsh-generated/resources/Practitioner-ExamplePractitioner.json ==
+INFORMATION: Practitioner/ExamplePractitioner: Practitioner.identifier[0].type: Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-v2-0203|1.0.1
+== fsh-generated/resources/PractitionerRole-ExamplePractitionerRoleAgregateur.json ==
+WARNING: PractitionerRole/ExamplePractitionerRoleAgregateur: PractitionerRole.contained[0]/*Location/ExampleLocation*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://www.interopsante.org/fhir/valuesets/fr-location-identifier-type' could not be found, so the code cannot be validated
 == fsh-generated/resources/Schedule-ExampleScheduleCPTS.json ==
 == fsh-generated/resources/SearchParameter-cptsslot-sp-servicetype.json ==
 WARNING: SearchParameter/cptsslot-sp-servicetype: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/SearchParameter)
@@ -90,7 +96,6 @@ INFORMATION: StructureDefinition/FrPractitionerAgregateur: StructureDefinition.s
 INFORMATION: StructureDefinition/FrPractitionerAgregateur: StructureDefinition.snapshot.element[176].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/FrPractitionerAgregateur: StructureDefinition.differential.element[1].fixed.ofType(CodeableConcept): Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-v2-0203|1.0.1
 WARNING: StructureDefinition/FrPractitionerAgregateur: StructureDefinition.snapshot.element[13].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
-WARNING: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition/FrPractitionerAgregateur'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrPractitionerAgregateur: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrPractitionerAgregateur vs http://sas.fr/fhir/StructureDefinition/FrPractitionerAgregateur
 == fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur.json ==
 ERROR: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition/FrPractitionerRoleExerciceAgregateur'): Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrPractitionerRoleExerciceAgregateur) does not match the URL (http://sas.fr/fhir/StructureDefinition/FrPractitionerRoleExerciceAgregateur)
@@ -101,7 +106,6 @@ INFORMATION: StructureDefinition/FrPractitionerRoleExerciceAgregateur: Structure
 INFORMATION: StructureDefinition/FrPractitionerRoleExerciceAgregateur: StructureDefinition.snapshot.element[55].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/FrPractitionerRoleExerciceAgregateur: StructureDefinition.differential.element[3].fixed.ofType(CodeableConcept): Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-v2-0203|1.0.1
 WARNING: StructureDefinition/FrPractitionerRoleExerciceAgregateur: StructureDefinition.snapshot.element[31].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
-WARNING: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition/FrPractitionerRoleExerciceAgregateur'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrPractitionerRoleExerciceAgregateur vs http://sas.fr/fhir/StructureDefinition/FrPractitionerRoleExerciceAgregateur
 == fsh-generated/resources/StructureDefinition-FrScheduleAgregateur.json ==
 ERROR: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur'): Conformance resource /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrScheduleAgregateur.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrScheduleAgregateur) does not match the URL (http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur)
