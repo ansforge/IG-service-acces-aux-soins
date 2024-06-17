@@ -1,6 +1,11 @@
 ***/!\ Cet Implementation Guide (IG) destiné au Service d'Accès aux Soins est en cours de construction.***
 Ne pas utiliser, référencer, diffuser avant publication de la v1.0.0.
 
+https://ansforge.github.io/IG-service-acces-aux-soins/main/ig/
+https://ansforge.github.io/IG-service-acces-aux-soins/[nom_de_la_branche]/ig/
+
+
+
 <div align="center">
 <figure>
 <img alt="Service d'Accès aux Soins (SAS)" src="input/images/sas_logo.png" align="middle">
