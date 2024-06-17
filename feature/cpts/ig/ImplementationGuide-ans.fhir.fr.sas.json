@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-17T12:56:05+00:00",
+  "date" : "2024-06-17T13:30:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -690,6 +690,18 @@
       },
       "name" : "Catégorie établissement SAS",
       "description" : "Catégorie d'établissement utilisée dans contexte SAS - CPTS dans un premier temps",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/cptsslot-sp-servicetype"
+      },
+      "name" : "cptsslot-sp-servicetype",
+      "description" : "Paramètre de recherche pour récupérer les Healthcare Service",
       "exampleBoolean" : false
     },
     {

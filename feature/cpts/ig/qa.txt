@@ -1,14 +1,15 @@
 ServicedAccsauxSoins : Validation Results
 =========================================
 
-err = 17, warn = 40, info = 47
+err = 17, warn = 41, info = 47
 IG Publisher Version: 1.6.11
-Generated Mon Jun 17 12:59:27 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
+Generated Mon Jun 17 13:34:21 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
  Build Errors : 1 / 11 / 0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/HealthcareService-ExampleHealthcareServiceCPTS : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Organization-ExampleOrgaCPTS : 0 / 0 / 2
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Schedule-ExampleScheduleCPTS : 0 / 0 / 1
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/SearchParameter-cptsslot-sp-servicetype : 0 / 1 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Slot-ExampleSlotCPTS : 0 / 0 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-BundleAgregateur : 2 / 1 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrAppointmentSAS : 2 / 2 / 8
@@ -54,6 +55,8 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Organization-ExampleOrgaCPTS.json ==
 INFORMATION: Organization/ExampleOrgaCPTS: Organization.identifier[0].type: Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-location-identifier-type|1.0.1
 == fsh-generated/resources/Schedule-ExampleScheduleCPTS.json ==
+== fsh-generated/resources/SearchParameter-cptsslot-sp-servicetype.json ==
+WARNING: SearchParameter/cptsslot-sp-servicetype: SearchParameter: Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/SearchParameter)
 == fsh-generated/resources/Slot-ExampleSlotCPTS.json ==
 INFORMATION: Slot/ExampleSlotCPTS: Slot.serviceType[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Slot/ExampleSlotCPTS: Slot.serviceType[1].coding[0]: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement' could not be found, so the code cannot be validated
