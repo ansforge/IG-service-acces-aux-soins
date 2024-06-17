@@ -1,10 +1,10 @@
 ServicedAccsauxSoins : Validation Results
 =========================================
 
-err = 17, warn = 41, info = 47
+err = 17, warn = 40, info = 47
 IG Publisher Version: 1.6.11
-Generated Mon Jun 17 13:34:21 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
- Build Errors : 1 / 11 / 0
+Generated Mon Jun 17 14:28:24 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.sas#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
+ Build Errors : 1 / 10 / 0
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/HealthcareService-ExampleHealthcareServiceCPTS : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Organization-ExampleOrgaCPTS : 0 / 0 / 2
@@ -48,7 +48,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/output/securite.html#/html/body/div/div/div/div/div/p/a at Line 207, column 224: The link 'annexes.html#sécurisation-des-échanges-par-mtls' for "annexe dédiée à la sécurisation des échanges par mTLS" cannot be resolved (valid targets: [ans-nav, segment-header, publish-box, bottom, hl7-logo, segment-post-footer, hl7-search-lnk, annexes, family-nav, ig-status, top, stripe, segment-footer, correspondance-des-environnements-anssas-et-éditeurs, segment-navbar, segment-content, segment-breadcrumb])
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/HealthcareService-ExampleHealthcareServiceCPTS.json ==
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas.json ==
