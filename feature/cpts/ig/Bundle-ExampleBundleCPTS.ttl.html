@@ -267,6 +267,12 @@
   ] [
 <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://&lt;base_URl&gt;/PractitionerRole/ExamplePractitionerRoleAgregateur&quot;^^xsd:anyURI ] ;
     ( <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole">fhir:resource</a> &lt;https://&lt;base_URl&gt;/PractitionerRole/ExamplePractitionerRoleAgregateur&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://&lt;base_URl&gt;/HealthcareService/ExampleHealthcareServiceCPTS&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService">fhir:resource</a> &lt;https://&lt;base_URl&gt;/HealthcareService/ExampleHealthcareServiceCPTS&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://&lt;base_URl&gt;/Organization/ExampleOrgaCPTS&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/organization.html#Organization">fhir:resource</a> &lt;https://&lt;base_URl&gt;/Organization/ExampleOrgaCPTS&gt; )
   ] ) . # 
 
 &lt;https://&lt;base_URl&gt;/Slot/ExampleSlotCPTS&gt; <a href="http://hl7.org/fhir/R4/slot.html">a</a> fhir:Slot ;
@@ -310,7 +316,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
   ] ; # 
   <a href="http://hl7.org/fhir/R4/schedule.html#Schedule.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Schedule_ExampleScheduleCPTS\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Schedule &lt;/b&gt;&lt;a name=\&quot;ExampleScheduleCPTS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcExampleScheduleCPTS\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;ResourceSchedule &amp;quot;ExampleScheduleCPTS&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-FrScheduleAgregateur.html\&quot;&gt;FrScheduleAgregateur&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=\&quot;HealthcareService-ExampleHealthcareServiceCPTS.html\&quot;&gt;HealthcareService/ExampleHealthcareServiceCPTS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Schedule_ExampleScheduleCPTS\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Schedule &lt;/b&gt;&lt;a name=\&quot;ExampleScheduleCPTS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcExampleScheduleCPTS\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;ResourceSchedule &amp;quot;ExampleScheduleCPTS&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-FrScheduleAgregateur.html\&quot;&gt;FrScheduleAgregateur&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: See on this page: HealthcareService/ExampleHealthcareServiceCPTS&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/schedule.html#Schedule.actor">fhir:actor</a> ( [
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HealthcareService/ExampleHealthcareServiceCPTS&quot; ]
@@ -385,6 +391,46 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;+33561855977&quot; ]
   ] ) . # 
 
+&lt;https://&lt;base_URl&gt;/HealthcareService/ExampleHealthcareServiceCPTS&gt; <a href="http://hl7.org/fhir/R4/healthcareservice.html">a</a> fhir:HealthcareService ;
+  <a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ExampleHealthcareServiceCPTS&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-healthcareservice-aggregator&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;HealthcareService_ExampleHealthcareServiceCPTS\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: HealthcareService &lt;/b&gt;&lt;a name=\&quot;ExampleHealthcareServiceCPTS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcExampleHealthcareServiceCPTS\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;ResourceHealthcareService &amp;quot;ExampleHealthcareServiceCPTS&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-sas-cpts-healthcareservice-aggregator.html\&quot;&gt;FrHealthcareServiceAgregateurCPTS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;providedBy&lt;/b&gt;: See on this page: Organization/ExampleOrgaCPTS&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/healthcareservice.html#HealthcareService.providedBy">fhir:providedBy</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Organization/ExampleOrgaCPTS&quot; ]
+  ] . # 
+
+&lt;https://&lt;base_URl&gt;/Organization/ExampleOrgaCPTS&gt; <a href="http://hl7.org/fhir/R4/organization.html">a</a> fhir:Organization ;
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ExampleOrgaCPTS&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Organization_ExampleOrgaCPTS\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization &lt;/b&gt;&lt;a name=\&quot;ExampleOrgaCPTS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcExampleOrgaCPTS\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;ResourceOrganization &amp;quot;ExampleOrgaCPTS&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-sas-sos-organization-aggregator.html\&quot;&gt;FrOrganizationAgregateurCPTS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS/1950047225&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: CPTS AXE MAJEUR&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\&quot;tel:+33102030405\&quot;&gt;+33102030405&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://interopsante.org/fhir/CodeSystem/fr-location-identifier-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;IDNST&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:1.2.250.1.71.4.2.2&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1950047225&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CPTS AXE MAJEUR&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.telecom">fhir:telecom</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;phone&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;+33102030405&quot; ]
+  ] ) . # 
+
 </code></pre>
 
 
@@ -432,7 +478,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sas#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 18, 2024 08:49+0000">2024-06-18</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sas#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 18, 2024 09:05+0000">2024-06-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
