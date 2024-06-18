@@ -57,10 +57,13 @@
           <profile value="http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Schedule_ExampleScheduleCPTS"> </a><p><b>Generated Narrative: Schedule </b><a name="ExampleScheduleCPTS"> </a><a name="hcExampleScheduleCPTS"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceSchedule &quot;ExampleScheduleCPTS&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-FrScheduleAgregateur.html">FrScheduleAgregateur</a></p></div><p><b>actor</b>: See on this page: HealthcareService/ExampleHealthcareServiceCPTS</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Schedule_ExampleScheduleCPTS"> </a><p><b>Generated Narrative: Schedule </b><a name="ExampleScheduleCPTS"> </a><a name="hcExampleScheduleCPTS"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceSchedule &quot;ExampleScheduleCPTS&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-FrScheduleAgregateur.html">FrScheduleAgregateur</a></p></div><p><b>actor</b>: </p><ul><li>See on this page: Practitioner/ExamplePractitioner</li><li>See on this page: PractitionerRole/ExamplePractitionerRoleAgregateur</li></ul></div>
         </text>
         <actor>
-          <reference value="HealthcareService/ExampleHealthcareServiceCPTS"/>
+          <reference value="Practitioner/ExamplePractitioner"/>
+        </actor>
+        <actor>
+          <reference value="PractitionerRole/ExamplePractitionerRoleAgregateur"/>
         </actor>
       </Schedule>
     </resource>

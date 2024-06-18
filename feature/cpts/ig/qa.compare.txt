@@ -1,11 +1,11 @@
 ServicedAccsauxSoins : Validation Results
 =========================================
 
-err = 17, warn = 45, info = 54
+err = 17, warn = 45, info = 53
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.sas#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
  Build Errors : 1 / 10 / 0
- /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Bundle-ExampleBundleCPTS : 0 / 7 / 29
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Bundle-ExampleBundleCPTS : 0 / 7 / 26
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/HealthcareService-ExampleHealthcareServiceCPTS : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Organization-ExampleOrgaCPTS : 0 / 0 / 2
@@ -56,9 +56,8 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[0].resource.serviceType[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[0].resource.serviceType[1].coding[0]: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement' could not be found, so the code cannot be validated
 INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[0].resource/*Slot/ExampleSlotCPTS*/.serviceType[1].coding[0]: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement' could not be found, so the code cannot be validated
-INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[2].resource.identifier[0].type: Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-v2-0203|1.0.1
 INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[2].resource/*Practitioner/ExamplePractitioner*/.identifier[0].type: Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-v2-0203|1.0.1
-WARNING: Bundle/ExampleBundleCPTS: Bundle.entry[3].resource.contained[0]/*Location/ExampleLocation*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://www.interopsante.org/fhir/valuesets/fr-location-identifier-type' could not be found, so the code cannot be validated
+WARNING: Bundle/ExampleBundleCPTS: Bundle.entry[3].resource/*PractitionerRole/ExamplePractitionerRoleAgregateur*/.contained[0]/*Location/ExampleLocation*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://www.interopsante.org/fhir/valuesets/fr-location-identifier-type' could not be found, so the code cannot be validated
 INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[5].resource/*Organization/ExampleOrgaCPTS*/.identifier[0].type: Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-location-identifier-type|1.0.1
 WARNING: Bundle/ExampleBundleCPTS: Bundle.entry[1]: This is not a matching resource type for the specified search (is a search mode needed?) (Schedule expecting [Slot])
 WARNING: Bundle/ExampleBundleCPTS: Bundle.entry[2]: This is not a matching resource type for the specified search (is a search mode needed?) (Practitioner expecting [Slot])
