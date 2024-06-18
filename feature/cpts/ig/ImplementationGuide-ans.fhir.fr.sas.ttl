@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ServicedAccsauxSoins"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-17T17:07:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-18T08:49:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -612,8 +612,23 @@
          fhir:reference [ fhir:v "SearchParameter/cptsslot-sp-servicetype" ]
        ] ;
        fhir:name [ fhir:v "cptsslot-sp-servicetype" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche pour récupérer les Healthcare Service" ] ;
+       fhir:description [ fhir:v "Paramètre de recherche sur le service type qui mime le paramètre R5. Permet de rechercher ou d'inclure la ressource reférencée HealthCare Service" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/Bundle/ExampleBundleCPTS> ;
+         fhir:reference [ fhir:v "Bundle/ExampleBundleCPTS" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleBundleCPTS" ] ;
+       fhir:description [ fhir:v "Exemple Bundle CPTS" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-bundle-aggregator"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-bundle-aggregator>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

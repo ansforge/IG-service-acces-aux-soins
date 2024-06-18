@@ -67,7 +67,7 @@
     "type" : "SearchParameter",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/SearchParameter/cptsslot-sp-servicetype",
     "version" : "0.1.0",
-    "name" : "SP CPTS"
+    "name" : "SP Service Type CPTS"
   },
   {
     "id" : "sas-cpts-bundle-aggregator",

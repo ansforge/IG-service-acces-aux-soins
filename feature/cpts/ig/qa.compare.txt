@@ -1,10 +1,11 @@
 ServicedAccsauxSoins : Validation Results
 =========================================
 
-err = 17, warn = 39, info = 48
+err = 17, warn = 43, info = 53
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.sas#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/sas)
  Build Errors : 1 / 10 / 0
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Bundle-ExampleBundleCPTS : 0 / 5 / 22
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/HealthcareService-ExampleHealthcareServiceCPTS : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/Organization-ExampleOrgaCPTS : 0 / 0 / 2
@@ -20,7 +21,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.sas#$-- (canonical = https://int
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrPractitionerRoleExerciceAgregateur : 2 / 1 / 7
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrScheduleAgregateur : 2 / 0 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrSlotAgregateur : 2 / 1 / 2
- /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-bundle-aggregator : 0 / 1 / 1
+ /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-bundle-aggregator : 0 / 0 / 1
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-healthcareservice-aggregator : 0 / 0 / 3
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-organization-aggregator : 0 / 1 / 4
  /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-sas-cpts-slot-aggregator : 0 / 0 / 2
@@ -51,6 +52,17 @@ ERROR: /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/i
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-ExampleBundleCPTS.json ==
+INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[0].resource.serviceType[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-slot-aggregator|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[0].resource.serviceType[1].coding[0]: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement' could not be found, so the code cannot be validated
+INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[0].resource/*Slot/ExampleSlotCPTS*/.serviceType[1].coding[0]: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement' could not be found, so the code cannot be validated
+INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[2].resource.identifier[0].type: Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-v2-0203|1.0.1
+INFORMATION: Bundle/ExampleBundleCPTS: Bundle.entry[2].resource/*Practitioner/ExamplePractitioner*/.identifier[0].type: Reference to draft CodeSystem http://interopsante.org/fhir/CodeSystem/fr-v2-0203|1.0.1
+WARNING: Bundle/ExampleBundleCPTS: Bundle.entry[3].resource.contained[0]/*Location/ExampleLocation*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://www.interopsante.org/fhir/valuesets/fr-location-identifier-type' could not be found, so the code cannot be validated
+WARNING: Bundle/ExampleBundleCPTS: Bundle.entry[1]: This is not a matching resource type for the specified search (is a search mode needed?) (Schedule expecting [Slot])
+WARNING: Bundle/ExampleBundleCPTS: Bundle.entry[2]: This is not a matching resource type for the specified search (is a search mode needed?) (Practitioner expecting [Slot])
+WARNING: Bundle/ExampleBundleCPTS: Bundle.entry[3]: This is not a matching resource type for the specified search (is a search mode needed?) (PractitionerRole expecting [Slot])
+WARNING: Bundle/ExampleBundleCPTS: Bundle: SearchSet bundles should have search modes on the entries
 == fsh-generated/resources/HealthcareService-ExampleHealthcareServiceCPTS.json ==
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.sas.json ==
 == fsh-generated/resources/Organization-ExampleOrgaCPTS.json ==
@@ -118,7 +130,6 @@ INFORMATION: StructureDefinition/FrSlotAgregateur: StructureDefinition.snapshot.
 WARNING: StructureDefinition.where(url = 'http://sas.fr/fhir/StructureDefinition/FrSlotAgregateur'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/IG-service-acces-aux-soins/IG-service-acces-aux-soins/igSource/fsh-generated/resources/StructureDefinition-FrSlotAgregateur: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/FrSlotAgregateur vs http://sas.fr/fhir/StructureDefinition/FrSlotAgregateur
 == fsh-generated/resources/StructureDefinition-sas-cpts-bundle-aggregator.json ==
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-bundle-aggregator'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-sas-cpts-healthcareservice-aggregator.json ==
 INFORMATION: StructureDefinition/sas-cpts-healthcareservice-aggregator: StructureDefinition.snapshot.element[17].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/sas-cpts-healthcareservice-aggregator: StructureDefinition.snapshot.element[56].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk

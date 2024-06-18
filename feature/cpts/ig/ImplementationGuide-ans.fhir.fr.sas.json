@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-17T17:07:43+00:00",
+  "date" : "2024-06-18T08:49:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -701,8 +701,20 @@
         "reference" : "SearchParameter/cptsslot-sp-servicetype"
       },
       "name" : "cptsslot-sp-servicetype",
-      "description" : "Paramètre de recherche pour récupérer les Healthcare Service",
+      "description" : "Paramètre de recherche sur le service type qui mime le paramètre R5. Permet de rechercher ou d'inclure la ressource reférencée HealthCare Service",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/ExampleBundleCPTS"
+      },
+      "name" : "ExampleBundleCPTS",
+      "description" : "Exemple Bundle CPTS",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-bundle-aggregator"
     },
     {
       "extension" : [{
