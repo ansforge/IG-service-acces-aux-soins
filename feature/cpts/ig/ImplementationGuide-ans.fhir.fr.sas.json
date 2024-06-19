@@ -10,7 +10,7 @@
   "name" : "ServicedAccsauxSoins",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-18T15:03:51+00:00",
+  "date" : "2024-06-19T08:58:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -638,10 +638,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/sas-sos-valueset-appointmentreason"
+        "reference" : "ValueSet/sas-valueset-appointmentreason"
       },
-      "name" : "Appointment reason SAS SOS",
-      "description" : "Appointment reason SAS SOS",
+      "name" : "Appointment reason SAS",
+      "description" : "Appointment reason SAS",
       "exampleBoolean" : false
     },
     {

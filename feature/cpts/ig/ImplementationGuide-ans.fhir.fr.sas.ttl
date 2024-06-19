@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ServicedAccsauxSoins"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-18T15:03:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-19T08:58:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -548,11 +548,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason> ;
-         fhir:reference [ fhir:v "ValueSet/sas-sos-valueset-appointmentreason" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-appointmentreason> ;
+         fhir:reference [ fhir:v "ValueSet/sas-valueset-appointmentreason" ]
        ] ;
-       fhir:name [ fhir:v "Appointment reason SAS SOS" ] ;
-       fhir:description [ fhir:v "Appointment reason SAS SOS" ] ;
+       fhir:name [ fhir:v "Appointment reason SAS" ] ;
+       fhir:description [ fhir:v "Appointment reason SAS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -59,7 +59,7 @@
       "uses" : {
       },
       "http://terminology.hl7.org/5.5.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes",
-      "ValueSet-sas-sos-valueset-appointmentreason.html" : "Appointment reason SAS SOS"
+      "ValueSet-sas-valueset-appointmentreason.html" : "Appointment reason SAS"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",

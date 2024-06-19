@@ -147,13 +147,6 @@
     "name" : "TypeCreneauSASCPTS"
   },
   {
-    "id" : "sas-sos-valueset-appointmentreason",
-    "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason",
-    "version" : "0.1.0",
-    "name" : "AppointmentReasonSASSOS"
-  },
-  {
     "id" : "sas-sos-valueset-participant-status",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status",
@@ -180,6 +173,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant",
     "version" : "0.1.0",
     "name" : "TypeIdentifiantSASSOS"
+  },
+  {
+    "id" : "sas-valueset-appointmentreason",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-appointmentreason",
+    "version" : "0.1.0",
+    "name" : "AppointmentReasonSAS"
   },
   {
     "id" : "sas-valueset-categorieetablissement",

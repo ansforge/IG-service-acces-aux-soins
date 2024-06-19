@@ -12,15 +12,6 @@
       ]
     },
     {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-appointmentreason",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "AppointmentReasonSASSOS",
-      "title" : "Appointment reason SAS SOS",
-      "description" : "Appointment reason SAS SOS",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"]
-    },
-    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-participant-status",
       "version" : "0.1.0",
       "status" : "draft",
@@ -57,6 +48,15 @@
       "title" : "Type identifiant SAS SOS",
       "description" : "Type d'identifiant SAS SOS",
       "systems" : ["http://interopsante.org/fhir/CodeSystem/fr-v2-0203"]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-appointmentreason",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AppointmentReasonSAS",
+      "title" : "Appointment reason SAS",
+      "description" : "Appointment reason SAS",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"]
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-categorieetablissement",
