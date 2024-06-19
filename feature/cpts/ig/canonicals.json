@@ -60,7 +60,7 @@
     "type" : "ImplementationGuide",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ImplementationGuide/ans.fhir.fr.sas",
     "version" : "0.1.0",
-    "name" : "ServicedAccsauxSoins"
+    "name" : "SAS"
   },
   {
     "id" : "cptsslot-sp-servicetype",

@@ -3,14 +3,14 @@
   "id" : "ans.fhir.fr.sas",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ServicedAccsauxSoins</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/sas/ImplementationGuide/ans.fhir.fr.sas</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SAS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/sas/ImplementationGuide/ans.fhir.fr.sas</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ImplementationGuide/ans.fhir.fr.sas",
   "version" : "0.1.0",
-  "name" : "ServicedAccsauxSoins",
+  "name" : "SAS",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-19T08:58:37+00:00",
+  "date" : "2024-06-19T13:37:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -74,7 +74,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -364,7 +364,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "trial-use"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1127,15 +1127,6 @@
           "title" : "Téléchargements et usages",
           "generation" : "markdown"
         }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "about.html"
-        }],
-        "nameUrl" : "about.html",
-        "title" : "A propos de ce guide",
-        "generation" : "markdown"
       }]
     },
     "parameter" : [{
