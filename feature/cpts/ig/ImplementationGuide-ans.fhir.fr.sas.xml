@@ -10,7 +10,7 @@
   <name value="SAS"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2024-06-20T12:10:02+00:00"/>
+  <date value="2024-06-20T15:16:37+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -871,6 +871,14 @@
         </extension>
         <nameUrl value="specifications_techniques_3.html"/>
         <title value="Mise à jour de rendez-vous"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ressources_casusages.html"/>
+        </extension>
+        <nameUrl value="ressources_casusages.html"/>
+        <title value="Ressources par cas d'usage"/>
         <generation value="markdown"/>
       </page>
       <page>

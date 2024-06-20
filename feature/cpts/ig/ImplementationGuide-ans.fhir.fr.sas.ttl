@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SAS"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-20T12:10:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-20T15:16:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1000,6 +1000,14 @@
          ] ) ;
          fhir:name [ fhir:v "specifications_techniques_3.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Mise à jour de rendez-vous" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "ressources_casusages.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "ressources_casusages.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Ressources par cas d'usage" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
