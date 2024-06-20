@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Slot </b><a name=\"ExampleSlotCPTS\"> </a><a name=\"hcExampleSlotCPTS\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceSlot &quot;ExampleSlotCPTS&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-sas-cpts-slot-aggregator.html\">FrSlotAgregateurCPTS</a></p></div><p><b>serviceType</b>: ambulatory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html\">ActCode</a>#AMB)</span>, 604 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (TRE_R66-CategorieEtablissement#604)</span></p><p><b>schedule</b>: <a href=\"Schedule-ExampleScheduleCPTS.html\">Schedule/ExampleScheduleCPTS</a></p><p><b>status</b>: free</p><p><b>start</b>: Jun 12, 2024, 2:40:00 PM</p><p><b>end</b>: Jun 12, 2024, 3:00:00 PM</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Slot </b><a name=\"ExampleSlotCPTS\"> </a><a name=\"hcExampleSlotCPTS\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceSlot &quot;ExampleSlotCPTS&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-sas-cpts-slot-aggregator.html\">FrSlotAgregateurCPTS</a></p></div><p><b>serviceType</b>: ambulatory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html\">ActCode</a>#AMB)</span>, 604 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (TRE_R66-CategorieEtablissement#604)</span></p><p><b>schedule</b>: <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://fhir.org/packages/hl7.fhir.fr.core/ExampleScheduleCPTS\">ExampleScheduleCPTS</a></p><p><b>status</b>: free</p><p><b>start</b>: Jun 12, 2024, 2:40:00 PM</p><p><b>end</b>: Jun 12, 2024, 3:00:00 PM</p></div>"
   ] ; # 
   fhir:serviceType ( [
      fhir:coding ( [
@@ -38,8 +38,7 @@
      ] )
   ] ) ; # 
   fhir:schedule [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/Schedule/ExampleScheduleCPTS> ;
-     fhir:reference [ fhir:v "Schedule/ExampleScheduleCPTS" ]
+     fhir:reference [ fhir:v "ExampleScheduleCPTS" ]
   ] ; # 
   fhir:status [ fhir:v "free"] ; # 
   fhir:start [ fhir:v "2024-06-12T16:40:00.000+02:00"^^xsd:dateTime] ; # 

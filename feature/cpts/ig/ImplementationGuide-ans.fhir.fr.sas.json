@@ -10,7 +10,7 @@
   "name" : "SAS",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-20T07:27:39+00:00",
+  "date" : "2024-06-20T12:10:02+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -770,10 +770,10 @@
         "valueString" : "Schedule"
       }],
       "reference" : {
-        "reference" : "Schedule/ExampleScheduleCPTS"
+        "reference" : "Schedule/ExampleSchedule"
       },
-      "name" : "ExampleScheduleCPTS",
-      "description" : "Exemple ressource schedule CPTS",
+      "name" : "ExampleSchedule",
+      "description" : "Exemple ressource schedule",
       "exampleCanonical" : "http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur"
     },
     {

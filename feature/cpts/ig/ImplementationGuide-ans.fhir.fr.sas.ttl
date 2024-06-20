@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SAS"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-20T07:27:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-20T12:10:02+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -695,11 +695,11 @@
          fhir:value [ fhir:v "Schedule" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/Schedule/ExampleScheduleCPTS> ;
-         fhir:reference [ fhir:v "Schedule/ExampleScheduleCPTS" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/Schedule/ExampleSchedule> ;
+         fhir:reference [ fhir:v "Schedule/ExampleSchedule" ]
        ] ;
-       fhir:name [ fhir:v "ExampleScheduleCPTS" ] ;
-       fhir:description [ fhir:v "Exemple ressource schedule CPTS" ] ;
+       fhir:name [ fhir:v "ExampleSchedule" ] ;
+       fhir:description [ fhir:v "Exemple ressource schedule" ] ;
        fhir:example [
          fhir:v "http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur"^^xsd:anyURI ;
          fhir:link <http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur>
