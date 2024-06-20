@@ -88,9 +88,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
+      "StructureDefinition-sas-sos-bundle-aggregator.html" : "BundleAgregateurSOS",
       "StructureDefinition-BundleAgregateur.html" : "BundleAgregateur",
-      "StructureDefinition-sas-cpts-bundle-aggregator.html" : "BundleAgregateurCPTS",
-      "StructureDefinition-sas-sos-bundle-aggregator.html" : "BundleAgregateurSOS"
+      "StructureDefinition-sas-cpts-bundle-aggregator.html" : "BundleAgregateurCPTS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -213,9 +213,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.624"],
       "uses" : {
       },
+      "StructureDefinition-sas-sos-bundle-aggregator.html" : "BundleAgregateurSOS",
       "StructureDefinition-BundleAgregateur.html" : "BundleAgregateur",
-      "StructureDefinition-sas-cpts-bundle-aggregator.html" : "BundleAgregateurCPTS",
-      "StructureDefinition-sas-sos-bundle-aggregator.html" : "BundleAgregateurSOS"
+      "StructureDefinition-sas-cpts-bundle-aggregator.html" : "BundleAgregateurCPTS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -229,14 +229,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
-      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
-      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
       "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur",
+      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
+      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-sas-cpts-healthcareservice-aggregator.html" : "FrHealthcareServiceAgregateurCPTS",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
       "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
@@ -251,20 +251,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
-      "StructureDefinition-FrLocationAgregateur.html" : "FrLocationAgregateur",
-      "StructureDefinition-sas-cpts-organization-aggregator.html" : "FrOrganizationAgregateurSOS",
-      "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS",
-      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-FrPractitionerAgregateur.html" : "FrPractitionerAgregateur",
-      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
-      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
-      "StructureDefinition-sas-sos-organization-aggregator.html" : "FrOrganizationAgregateurCPTS",
+      "StructureDefinition-FrLocationAgregateur.html" : "FrLocationAgregateur",
+      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
       "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur",
-      "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
       "StructureDefinition-sas-cpts-healthcareservice-aggregator.html" : "FrHealthcareServiceAgregateurCPTS",
-      "StructureDefinition-sas-sos-location-aggregator.html" : "FrLocationAgregateurSOS"
+      "StructureDefinition-sas-sos-location-aggregator.html" : "FrLocationAgregateurSOS",
+      "StructureDefinition-sas-sos-organization-aggregator.html" : "FrOrganizationAgregateurCPTS",
+      "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS",
+      "StructureDefinition-sas-cpts-organization-aggregator.html" : "FrOrganizationAgregateurSOS",
+      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
+      "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -278,23 +278,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
-      "StructureDefinition-BundleAgregateur.html" : "BundleAgregateur",
-      "StructureDefinition-FrLocationAgregateur.html" : "FrLocationAgregateur",
-      "StructureDefinition-sas-cpts-organization-aggregator.html" : "FrOrganizationAgregateurSOS",
-      "StructureDefinition-sas-cpts-bundle-aggregator.html" : "BundleAgregateurCPTS",
-      "StructureDefinition-sas-sos-bundle-aggregator.html" : "BundleAgregateurSOS",
-      "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS",
-      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-FrPractitionerAgregateur.html" : "FrPractitionerAgregateur",
-      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
-      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
-      "StructureDefinition-sas-sos-organization-aggregator.html" : "FrOrganizationAgregateurCPTS",
+      "StructureDefinition-FrLocationAgregateur.html" : "FrLocationAgregateur",
+      "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
       "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur",
-      "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
       "StructureDefinition-sas-cpts-healthcareservice-aggregator.html" : "FrHealthcareServiceAgregateurCPTS",
-      "StructureDefinition-sas-sos-location-aggregator.html" : "FrLocationAgregateurSOS"
+      "StructureDefinition-sas-sos-location-aggregator.html" : "FrLocationAgregateurSOS",
+      "StructureDefinition-sas-sos-organization-aggregator.html" : "FrOrganizationAgregateurCPTS",
+      "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS",
+      "StructureDefinition-sas-sos-bundle-aggregator.html" : "BundleAgregateurSOS",
+      "StructureDefinition-BundleAgregateur.html" : "BundleAgregateur",
+      "StructureDefinition-sas-cpts-bundle-aggregator.html" : "BundleAgregateurCPTS",
+      "StructureDefinition-sas-cpts-organization-aggregator.html" : "FrOrganizationAgregateurSOS",
+      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
+      "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -410,11 +410,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-FrLocationAgregateur.html" : "FrLocationAgregateur",
-      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
       "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur",
+      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-sas-sos-location-aggregator.html" : "FrLocationAgregateurSOS"
     },
     {
@@ -429,9 +429,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.622"],
       "uses" : {
       },
+      "StructureDefinition-sas-sos-bundle-aggregator.html" : "BundleAgregateurSOS",
       "StructureDefinition-BundleAgregateur.html" : "BundleAgregateur",
-      "StructureDefinition-sas-cpts-bundle-aggregator.html" : "BundleAgregateurCPTS",
-      "StructureDefinition-sas-sos-bundle-aggregator.html" : "BundleAgregateurSOS"
+      "StructureDefinition-sas-cpts-bundle-aggregator.html" : "BundleAgregateurCPTS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-category",
@@ -445,13 +445,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.516"],
       "uses" : {
       },
-      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
-      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
       "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
+      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-sas-cpts-healthcareservice-aggregator.html" : "FrHealthcareServiceAgregateurCPTS",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
       "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
@@ -498,13 +498,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
-      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
       "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
+      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-sas-cpts-healthcareservice-aggregator.html" : "FrHealthcareServiceAgregateurCPTS",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
       "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
@@ -650,14 +650,14 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
-      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
-      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
       "StructureDefinition-FrPractitionerRoleExerciceAgregateur.html" : "FrPractitionerRoleExerciceAgregateur",
+      "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
+      "StructureDefinition-sas-sos-schedule-aggregator.html" : "FrScheduleAgregateurSOS",
       "StructureDefinition-sas-cpts-healthcareservice-aggregator.html" : "FrHealthcareServiceAgregateurCPTS",
+      "StructureDefinition-FrScheduleAgregateur.html" : "FrScheduleAgregateur",
       "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
@@ -688,9 +688,9 @@
       "uses" : {
       },
       "StructureDefinition-FrSlotAgregateur.html" : "FrSlotAgregateur",
-      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
       "StructureDefinition-sas-sos-appointment.html" : "FrAppointmentSASSOS",
       "StructureDefinition-FrAppointmentSAS.html" : "FrAppointmentSAS",
+      "StructureDefinition-sas-cpts-slot-aggregator.html" : "FrSlotAgregateurCPTS",
       "StructureDefinition-sas-sos-slot-aggregator.html" : "FrSlotAgregateurSOS"
     },
     {
