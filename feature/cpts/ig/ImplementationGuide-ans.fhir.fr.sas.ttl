@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SAS"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-20T16:03:01+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-21T08:14:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -752,6 +752,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sas-cpts-healthcareservice-aggregator" ]
        ] ;
        fhir:name [ fhir:v "FrHealthcareServiceAgregateurCPTS" ] ;
+       fhir:description [ fhir:v "Profil dérivé de FrHealthcareService pour le cas d'usage agrégateur CPTS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -786,6 +787,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sas-sos-organization-aggregator" ]
        ] ;
        fhir:name [ fhir:v "FrOrganizationAgregateurCPTS" ] ;
+       fhir:description [ fhir:v "Profil dérivé de FrOrganization pour le cas d'usage agrégateur CPTS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

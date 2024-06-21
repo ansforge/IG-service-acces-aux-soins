@@ -10,7 +10,7 @@
   <name value="SAS"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2024-06-20T16:03:01+00:00"/>
+  <date value="2024-06-21T08:14:05+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -642,6 +642,7 @@
         <reference value="StructureDefinition/sas-cpts-healthcareservice-aggregator"/>
       </reference>
       <name value="FrHealthcareServiceAgregateurCPTS"/>
+      <description value="Profil dérivé de FrHealthcareService pour le cas d'usage agrégateur CPTS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -673,6 +674,7 @@
         <reference value="StructureDefinition/sas-sos-organization-aggregator"/>
       </reference>
       <name value="FrOrganizationAgregateurCPTS"/>
+      <description value="Profil dérivé de FrOrganization pour le cas d'usage agrégateur CPTS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

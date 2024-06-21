@@ -210,9 +210,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Liste des profils à utiliser dans le cadre du cas d’usage CPTS</p>
 
-<p><span style="color: maroon">Error processing SQL: Cannot invoke "String.contains(java.lang.CharSequence)" because "content" is null</span></p>
+<table class="grid"><tr><td style="background-color: #eeeeee">Id</td><td style="background-color: #eeeeee">Type</td><td style="background-color: #eeeeee">IFNULL(Description,' ')</td></tr><tr><td>ExampleBundleCPTS</td><td>Bundle</td><td> </td></tr><tr><td>ExampleHealthcareServiceCPTS</td><td>HealthcareService</td><td> </td></tr><tr><td>ExampleOrgaCPTS</td><td>Organization</td><td> </td></tr><tr><td>cptsslot-sp-servicetype</td><td>SearchParameter</td><td>Paramètre de recherche sur le service type qui mime le paramètre R5. Permet de rechercher ou d'inclure la ressource reférencée HealthCare Service</td></tr><tr><td>ExampleSlotCPTS</td><td>Slot</td><td> </td></tr><tr><td>sas-cpts-bundle-aggregator</td><td>StructureDefinition</td><td>Bundle Agrégateur SAS CPTS</td></tr><tr><td>sas-cpts-healthcareservice-aggregator</td><td>StructureDefinition</td><td>Profil dérivé de FrHealthcareService pour le cas d'usage agrégateur CPTS</td></tr><tr><td>sas-cpts-organization-aggregator</td><td>StructureDefinition</td><td> </td></tr><tr><td>sas-cpts-slot-aggregator</td><td>StructureDefinition</td><td>Profil de Slot, dérivé de FrSlot, pour le service d'agrégation de créneaux de la plateforme SAS (Service d'accès aux soins), dans le cadre du cas d'usage CPTS</td></tr><tr><td>sas-cpts-slot-servicetype-aggregator</td><td>StructureDefinition</td><td>Extension créée afin de permettre la reference à la ressource HealthcareService. Cette extension implemente l'élément serviceType de R5 https://hl7.org/fhir/slot-definitions.html#Slot.serviceType</td></tr><tr><td>sas-cpts-valueset-typecreneau</td><td>ValueSet</td><td>Type de Créneaux SAS CPTS</td></tr></table>
 
-<!-- like "%Profil%" rajouté car induit une erreur si vide -->
 
 
 
@@ -254,7 +253,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sas#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 20, 2024 16:03+0000">2024-06-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sas#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 08:14+0000">2024-06-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

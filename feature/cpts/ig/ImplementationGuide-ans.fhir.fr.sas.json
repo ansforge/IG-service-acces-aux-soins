@@ -10,7 +10,7 @@
   "name" : "SAS",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-20T16:03:01+00:00",
+  "date" : "2024-06-21T08:14:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -820,6 +820,7 @@
         "reference" : "StructureDefinition/sas-cpts-healthcareservice-aggregator"
       },
       "name" : "FrHealthcareServiceAgregateurCPTS",
+      "description" : "Profil dérivé de FrHealthcareService pour le cas d'usage agrégateur CPTS",
       "exampleBoolean" : false
     },
     {
@@ -854,6 +855,7 @@
         "reference" : "StructureDefinition/sas-sos-organization-aggregator"
       },
       "name" : "FrOrganizationAgregateurCPTS",
+      "description" : "Profil dérivé de FrOrganization pour le cas d'usage agrégateur CPTS",
       "exampleBoolean" : false
     },
     {
