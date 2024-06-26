@@ -55,12 +55,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Practitioner.identifier.type","Practitioner.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://interopsante.org/fhir/CodeSystem/fr-v2-0203""/>
     <code value=""IDNPS""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://interopsante.org/fhir/ValueSet/fr-practioner-identifier-type","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","",,"required","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://interopsante.org/fhir/ValueSet/fr-practioner-identifier-type","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Practitioner.identifier.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
@@ -111,7 +111,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The namespace for the identifier value","Establishes the namespace for the value - that is, a OID that describes a set values that are unique.
 the namespace for the practitioner identifier value is fixed in France.
 Pour un PS identifié à partir de sa carte CPS, OID = 1.2.250.1.71.4.2.1
-Pour un employé identifié au sein de sa structure, OID de l'établissement, branche de gestion des employés ou http://hopitalTest.fr/fhir/namingsystem/employes","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:1.2.250.1.71.4.2.1""/>","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"ele-1
+Pour un employé identifié au sein de sa structure, OID de l'établissement, branche de gestion des employés ou http://hopitalTest.fr/fhir/namingsystem/employes","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:1.2.250.1.71.4.2.1""/>","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Practitioner.identifier.value","Practitioner.identifier.value","","","",1,1,"","","Y","string {[]} {[]}
