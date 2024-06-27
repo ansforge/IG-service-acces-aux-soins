@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SAS"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-27T12:50:32+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-27T13:56:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -741,6 +741,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sas-sos-appointment" ]
        ] ;
        fhir:name [ fhir:v "FrAppointmentSASSOS" ] ;
+       fhir:description [ fhir:v "Profil de Slot, dérivé de FrSlot, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -776,6 +777,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sas-sos-location-aggregator" ]
        ] ;
        fhir:name [ fhir:v "FrLocationAgregateurSOS" ] ;
+       fhir:description [ fhir:v "Profil de Location, dérivé de FrLocation, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -799,6 +801,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sas-cpts-organization-aggregator" ]
        ] ;
        fhir:name [ fhir:v "FrOrganizationAgregateurSOS" ] ;
+       fhir:description [ fhir:v "Profil d'Organization, dérivé de FrOrganization, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -846,6 +849,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sas-sos-schedule-aggregator" ]
        ] ;
        fhir:name [ fhir:v "FrScheduleAgregateurSOS" ] ;
+       fhir:description [ fhir:v "Profil de Schedule, dérivé de FrSchedule, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -881,6 +885,7 @@
          fhir:reference [ fhir:v "StructureDefinition/sas-sos-slot-aggregator" ]
        ] ;
        fhir:name [ fhir:v "FrSlotAgregateurSOS" ] ;
+       fhir:description [ fhir:v "Profil de Slot, dérivé de FrSlot, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -912,11 +917,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation> ;
-         fhir:reference [ fhir:v "ValueSet/sas-sos-valueset-typeconsultation" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeconsultation> ;
+         fhir:reference [ fhir:v "ValueSet/sas-valueset-typeconsultation" ]
        ] ;
-       fhir:name [ fhir:v "Type consultation SAS SOS" ] ;
-       fhir:description [ fhir:v "Type de consultations SAS SOS" ] ;
+       fhir:name [ fhir:v "Type consultation SAS" ] ;
+       fhir:description [ fhir:v "Type de consultations SAS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -948,11 +953,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant> ;
-         fhir:reference [ fhir:v "ValueSet/sas-sos-valueset-typeidentifiant" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeidentifiant> ;
+         fhir:reference [ fhir:v "ValueSet/sas-valueset-typeidentifiant" ]
        ] ;
-       fhir:name [ fhir:v "Type identifiant SAS SOS" ] ;
-       fhir:description [ fhir:v "Type d'identifiant SAS SOS" ] ;
+       fhir:name [ fhir:v "Type identifiant SAS" ] ;
+       fhir:description [ fhir:v "Type d'identifiant SAS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

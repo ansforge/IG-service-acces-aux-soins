@@ -154,25 +154,11 @@
     "name" : "ParticipantStatusSASSOS"
   },
   {
-    "id" : "sas-sos-valueset-typeconsultation",
-    "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation",
-    "version" : "0.1.0",
-    "name" : "TypeConsultationSASSOS"
-  },
-  {
     "id" : "sas-sos-valueset-typecreneau",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau",
     "version" : "0.1.0",
     "name" : "TypeCreneauSASSOS"
-  },
-  {
-    "id" : "sas-sos-valueset-typeidentifiant",
-    "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant",
-    "version" : "0.1.0",
-    "name" : "TypeIdentifiantSASSOS"
   },
   {
     "id" : "sas-valueset-appointmentreason",
@@ -187,5 +173,19 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-categorieetablissement",
     "version" : "0.1.0",
     "name" : "CategorieEtablissementSAS"
+  },
+  {
+    "id" : "sas-valueset-typeconsultation",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeconsultation",
+    "version" : "0.1.0",
+    "name" : "TypeConsultationSAS"
+  },
+  {
+    "id" : "sas-valueset-typeidentifiant",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeidentifiant",
+    "version" : "0.1.0",
+    "name" : "TypeIdentifiantSAS"
   }
 ]

@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "FrOrganizationAgregateurSOS",
   "status" : "draft",
-  "date" : "2024-06-27T12:50:32+00:00",
+  "date" : "2024-06-27T13:56:11+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -18,6 +18,7 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil d'Organization, dérivé de FrOrganization, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

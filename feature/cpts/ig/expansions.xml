@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="22ca5ef3-5f3d-4aa0-a114-0fcb784277e8"/>
+  <id value="2ffc307e-8e36-46ad-89f4-1c376f629803"/>
   <meta>
-    <lastUpdated value="2024-06-27T12:50:32.951+00:00"/>
+    <lastUpdated value="2024-06-27T13:56:11.741+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -71,7 +71,7 @@
         <name value="ParticipantStatusSASSOS"/>
         <title value="Statut participant SAS SOS"/>
         <status value="draft"/>
-        <date value="2024-06-27T12:50:32+00:00"/>
+        <date value="2024-06-27T13:56:11+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -80,8 +80,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4fc935f4-39b3-4c02-b2e1-de4daf09702e"/>
-          <timestamp value="2024-06-27T12:51:16+00:00"/>
+          <identifier value="urn:uuid:d7d832d9-2ce0-4ffb-9246-d025d1e54a86"/>
+          <timestamp value="2024-06-27T13:56:54+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -115,7 +115,115 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation"/>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-appointmentreason"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0276.html">codesystem appointmentReason v2.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-http---terminology.hl7.org-CodeSystem-v2-0276-ROUTINE"> </a>  
+                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0276.html#v2-0276-ROUTINE">ROUTINE</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0276</td>
+                <td>Créneau avec prise de RDV possible</td>
+                <td>
+                  <div>
+                    <p>Routine appointment - default if not valued</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-http---terminology.hl7.org-CodeSystem-v2-0276-WALKIN"> </a>  
+                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0276.html#v2-0276-WALKIN">WALKIN</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0276</td>
+                <td>Créneau sans prise de RDV possible à domicile</td>
+                <td>
+                  <div>
+                    <p>A previously unscheduled walk-in visit</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-appointmentreason"/>
+        <version value="0.1.0"/>
+        <name value="AppointmentReasonSAS"/>
+        <title value="Appointment reason SAS"/>
+        <status value="draft"/>
+        <date value="2024-06-27T13:56:11+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c26071a5-03a3-4dbc-b5df-62b78ec31ae6"/>
+          <timestamp value="2024-06-27T13:56:55+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0276|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
+            <code value="ROUTINE"/>
+            <display value="Créneau avec prise de RDV possible"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
+            <code value="WALKIN"/>
+            <display value="Créneau sans prise de RDV possible à domicile"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeconsultation"/>
     <resource>
       <ValueSet>
         <text>
@@ -188,12 +296,12 @@
             </table>
           </div>
         </text>
-        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation"/>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeconsultation"/>
         <version value="0.1.0"/>
-        <name value="TypeConsultationSASSOS"/>
-        <title value="Type consultation SAS SOS"/>
+        <name value="TypeConsultationSAS"/>
+        <title value="Type consultation SAS"/>
         <status value="draft"/>
-        <date value="2024-06-27T12:50:32+00:00"/>
+        <date value="2024-06-27T13:56:11+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -202,8 +310,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:56050a2b-6bdd-4ace-84ca-5ab24f007af2"/>
-          <timestamp value="2024-06-27T12:51:16+00:00"/>
+          <identifier value="urn:uuid:9c3ae2ee-ccd4-4bfe-92b3-6b52b9fa0cee"/>
+          <timestamp value="2024-06-27T13:56:55+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -242,7 +350,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant"/>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeidentifiant"/>
     <resource>
       <ValueSet>
         <text>
@@ -286,12 +394,12 @@
             </table>
           </div>
         </text>
-        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant"/>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeidentifiant"/>
         <version value="0.1.0"/>
-        <name value="TypeIdentifiantSASSOS"/>
-        <title value="Type identifiant SAS SOS"/>
+        <name value="TypeIdentifiantSAS"/>
+        <title value="Type identifiant SAS"/>
         <status value="draft"/>
-        <date value="2024-06-27T12:50:32+00:00"/>
+        <date value="2024-06-27T13:56:11+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -300,8 +408,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f4071cb5-4298-4f73-979e-645ee851d5ef"/>
-          <timestamp value="2024-06-27T12:51:17+00:00"/>
+          <identifier value="urn:uuid:4579832b-3e00-4a72-8493-c312d4d4aac4"/>
+          <timestamp value="2024-06-27T13:56:55+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -329,114 +437,6 @@
             <system value="http://interopsante.org/fhir/CodeSystem/fr-v2-0203"/>
             <code value="INTRN"/>
             <display value="Identifiant interne"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-appointmentreason"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0276.html">codesystem appointmentReason v2.0.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 2 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="null-x-http---terminology.hl7.org-CodeSystem-v2-0276-ROUTINE"> </a>  
-                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0276.html#v2-0276-ROUTINE">ROUTINE</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v2-0276</td>
-                <td>Créneau avec prise de RDV possible</td>
-                <td>
-                  <div>
-                    <p>Routine appointment - default if not valued</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="null-x-http---terminology.hl7.org-CodeSystem-v2-0276-WALKIN"> </a>  
-                  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0276.html#v2-0276-WALKIN">WALKIN</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v2-0276</td>
-                <td>Créneau sans prise de RDV possible à domicile</td>
-                <td>
-                  <div>
-                    <p>A previously unscheduled walk-in visit</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-appointmentreason"/>
-        <version value="0.1.0"/>
-        <name value="AppointmentReasonSAS"/>
-        <title value="Appointment reason SAS"/>
-        <status value="draft"/>
-        <date value="2024-06-27T12:50:32+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="FR"/>
-            <display value="FRANCE"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:f1608ce5-045c-4e15-aebd-7d90efa1ee8b"/>
-          <timestamp value="2024-06-27T12:51:17+00:00"/>
-          <total value="2"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0276|2.0.0"/>
-          </parameter>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
-            <code value="ROUTINE"/>
-            <display value="Créneau avec prise de RDV possible"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
-            <code value="WALKIN"/>
-            <display value="Créneau sans prise de RDV possible à domicile"/>
           </contains>
         </expansion>
       </ValueSet>

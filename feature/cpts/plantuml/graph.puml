@@ -258,9 +258,9 @@ package IG #DDDDDD{
 
      FrSlotAgregateurCPTS -[#black,dotted,thickness=2]-> AppointmentReasonSAS
 
-        class TypeIdentifiantSASSOS  
+        class TypeIdentifiantSAS  
 
-     FrAppointmentSASSOS -[#black,dotted,thickness=2]-> TypeIdentifiantSASSOS
+     FrAppointmentSASSOS -[#black,dotted,thickness=2]-> TypeIdentifiantSAS
 
         class ParticipantStatusSASSOS  
 
@@ -270,9 +270,9 @@ package IG #DDDDDD{
 
      FrSlotAgregateurSOS -[#black,dotted,thickness=2]-> TypeCreneauSASSOS
 
-        class TypeConsultationSASSOS  
+        class TypeConsultationSAS  
 
-     FrSlotAgregateurSOS -[#black,dotted,thickness=2]-> TypeConsultationSASSOS
+     FrSlotAgregateurSOS -[#black,dotted,thickness=2]-> TypeConsultationSAS
 
         class AppointmentReasonSAS  
 

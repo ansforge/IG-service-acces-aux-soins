@@ -21,15 +21,6 @@
       "systems" : ["http://hl7.org/fhir/participationstatus"]
     },
     {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeconsultation",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypeConsultationSASSOS",
-      "title" : "Type consultation SAS SOS",
-      "description" : "Type de consultations SAS SOS",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
-    },
-    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typecreneau",
       "version" : "0.1.0",
       "status" : "draft",
@@ -39,15 +30,6 @@
       "systems" : [
         "https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau"
       ]
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-sos-valueset-typeidentifiant",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypeIdentifiantSASSOS",
-      "title" : "Type identifiant SAS SOS",
-      "description" : "Type d'identifiant SAS SOS",
-      "systems" : ["http://interopsante.org/fhir/CodeSystem/fr-v2-0203"]
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-appointmentreason",
@@ -68,6 +50,24 @@
       "systems" : [
         "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/TRE_R66-CategorieEtablissement"
       ]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeconsultation",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TypeConsultationSAS",
+      "title" : "Type consultation SAS",
+      "description" : "Type de consultations SAS",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"]
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/sas/ValueSet/sas-valueset-typeidentifiant",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TypeIdentifiantSAS",
+      "title" : "Type identifiant SAS",
+      "description" : "Type d'identifiant SAS",
+      "systems" : ["http://interopsante.org/fhir/CodeSystem/fr-v2-0203"]
     }
   ]
 }

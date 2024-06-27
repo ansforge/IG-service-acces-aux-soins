@@ -10,7 +10,7 @@
   <name value="SAS"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2024-06-27T12:50:32+00:00"/>
+  <date value="2024-06-27T13:56:11+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -632,6 +632,7 @@
         <reference value="StructureDefinition/sas-sos-appointment"/>
       </reference>
       <name value="FrAppointmentSASSOS"/>
+      <description value="Profil de Slot, dérivé de FrSlot, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -664,6 +665,7 @@
         <reference value="StructureDefinition/sas-sos-location-aggregator"/>
       </reference>
       <name value="FrLocationAgregateurSOS"/>
+      <description value="Profil de Location, dérivé de FrLocation, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -685,6 +687,7 @@
         <reference value="StructureDefinition/sas-cpts-organization-aggregator"/>
       </reference>
       <name value="FrOrganizationAgregateurSOS"/>
+      <description value="Profil d'Organization, dérivé de FrOrganization, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -728,6 +731,7 @@
         <reference value="StructureDefinition/sas-sos-schedule-aggregator"/>
       </reference>
       <name value="FrScheduleAgregateurSOS"/>
+      <description value="Profil de Schedule, dérivé de FrSchedule, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -760,6 +764,7 @@
         <reference value="StructureDefinition/sas-sos-slot-aggregator"/>
       </reference>
       <name value="FrSlotAgregateurSOS"/>
+      <description value="Profil de Slot, dérivé de FrSlot, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -789,10 +794,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/sas-sos-valueset-typeconsultation"/>
+        <reference value="ValueSet/sas-valueset-typeconsultation"/>
       </reference>
-      <name value="Type consultation SAS SOS"/>
-      <description value="Type de consultations SAS SOS"/>
+      <name value="Type consultation SAS"/>
+      <description value="Type de consultations SAS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -822,10 +827,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/sas-sos-valueset-typeidentifiant"/>
+        <reference value="ValueSet/sas-valueset-typeidentifiant"/>
       </reference>
-      <name value="Type identifiant SAS SOS"/>
-      <description value="Type d'identifiant SAS SOS"/>
+      <name value="Type identifiant SAS"/>
+      <description value="Type d'identifiant SAS"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
