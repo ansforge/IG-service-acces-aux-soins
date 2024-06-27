@@ -6,7 +6,7 @@
     <profile value="https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization </b><a name="ExampleOrgaCPTS"> </a><a name="hcExampleOrgaCPTS"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceOrganization &quot;ExampleOrgaCPTS&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-sas-sos-organization-aggregator.html">FrOrganizationAgregateurCPTS</a></p></div><p><b>identifier</b>: Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS/1950047225</p><p><b>name</b>: CPTS AXE MAJEUR</p><p><b>telecom</b>: <a href="tel:+33102030405">+33102030405</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization ExampleOrgaCPTS</b></p><a name="ExampleOrgaCPTS"> </a><a name="hcExampleOrgaCPTS"> </a><a name="hcExampleOrgaCPTS-fr-FR"> </a><p><b>identifier</b>: Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS/1950047225</p><p><b>name</b>: CPTS AXE MAJEUR</p><p><b>telecom</b>: <a href="tel:+33102030405">+33102030405</a></p></div>
   </text>
   <identifier>
     <type>

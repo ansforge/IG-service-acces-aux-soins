@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: HealthcareService </b><a name=\"ExampleHealthcareServiceCPTS\"> </a><a name=\"hcExampleHealthcareServiceCPTS\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceHealthcareService &quot;ExampleHealthcareServiceCPTS&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-sas-cpts-healthcareservice-aggregator.html\">FrHealthcareServiceAgregateurCPTS</a></p></div><p><b>providedBy</b>: <a href=\"Organization-ExampleOrgaCPTS.html\">Organization/ExampleOrgaCPTS</a> &quot;CPTS AXE MAJEUR&quot;</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: HealthcareService ExampleHealthcareServiceCPTS</b></p><a name=\"ExampleHealthcareServiceCPTS\"> </a><a name=\"hcExampleHealthcareServiceCPTS\"> </a><a name=\"hcExampleHealthcareServiceCPTS-fr-FR\"> </a><p><b>providedBy</b>: <a href=\"Organization-ExampleOrgaCPTS.html\">Organization CPTS AXE MAJEUR</a></p></div>"
   ] ; # 
   fhir:providedBy [
      fhir:link <https://interop.esante.gouv.fr/ig/fhir/sas/Organization/ExampleOrgaCPTS> ;

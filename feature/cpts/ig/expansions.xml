@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ae4786a1-8cb5-4a91-82f7-389d66137c96"/>
+  <id value="9791257d-1aec-46d7-997a-21485c2d724d"/>
   <meta>
-    <lastUpdated value="2024-06-26T17:15:09.913+00:00"/>
+    <lastUpdated value="2024-06-27T11:51:58.670+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,6 +13,9 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="http://hl7.org/fhir/R4/codesystem-participationstatus.html">codesystem ParticipationStatus v4.0.1 (CodeSystem)</a>
             </p>
@@ -34,7 +37,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-participationstatus-accepted"> </a>  
+                  <a name="null-x-http---hl7.org-fhir-participationstatus-accepted"> </a>  
                   <a href="http://hl7.org/fhir/R4/codesystem-participationstatus.html#participationstatus-accepted">accepted</a>
                 </td>
                 <td>http://hl7.org/fhir/participationstatus</td>
@@ -48,7 +51,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-participationstatus-needs-action"> </a>  
+                  <a name="null-x-http---hl7.org-fhir-participationstatus-needs-action"> </a>  
                   <a href="http://hl7.org/fhir/R4/codesystem-participationstatus.html#participationstatus-needs-action">needs-action</a>
                 </td>
                 <td>http://hl7.org/fhir/participationstatus</td>
@@ -68,7 +71,7 @@
         <name value="ParticipantStatusSASSOS"/>
         <title value="Statut participant SAS SOS"/>
         <status value="draft"/>
-        <date value="2024-06-26T17:15:09+00:00"/>
+        <date value="2024-06-27T11:51:58+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -77,8 +80,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1be3e247-f618-4ff0-aafd-0b434aea0b62"/>
-          <timestamp value="2024-06-26T17:15:47+00:00"/>
+          <identifier value="urn:uuid:d6fcd581-19d0-4788-a3a4-809c5208b99c"/>
+          <timestamp value="2024-06-27T11:52:39+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -118,6 +121,9 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html">codesystem ActCode v9.0.0 (CodeSystem)</a>
             </p>
@@ -139,7 +145,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-AMB"> </a>  
+                  <a name="null-x-http---terminology.hl7.org-CodeSystem-v3-ActCode-AMB"> </a>  
                   <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">AMB</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
@@ -153,7 +159,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HH"> </a>  
+                  <a name="null-x-http---terminology.hl7.org-CodeSystem-v3-ActCode-HH"> </a>  
                   <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">HH</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
@@ -167,7 +173,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-VR"> </a>  
+                  <a name="null-x-http---terminology.hl7.org-CodeSystem-v3-ActCode-VR"> </a>  
                   <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR">VR</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
@@ -187,7 +193,7 @@
         <name value="TypeConsultationSASSOS"/>
         <title value="Type consultation SAS SOS"/>
         <status value="draft"/>
-        <date value="2024-06-26T17:15:09+00:00"/>
+        <date value="2024-06-27T11:51:58+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -196,8 +202,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f0489954-d55e-42dc-9a0d-2472db822a17"/>
-          <timestamp value="2024-06-26T17:15:47+00:00"/>
+          <identifier value="urn:uuid:85e3b29d-7efc-40f6-929c-a8c72a810a9c"/>
+          <timestamp value="2024-06-27T11:52:39+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -242,6 +248,9 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/CodeSystem/fr-v2-0203">codesystem fr-v2-0203 v1.0.1 (CodeSystem)</a>
             </p>
@@ -260,7 +269,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---interopsante.org-fhir-CodeSystem-fr-v2-0203-IDNPS"> </a>  
+                  <a name="null-x-http---interopsante.org-fhir-CodeSystem-fr-v2-0203-IDNPS"> </a>  
                   <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/CodeSystem/fr-v2-0203.html#fr-v2-0203-IDNPS">IDNPS</a>
                 </td>
                 <td>http://interopsante.org/fhir/CodeSystem/fr-v2-0203</td>
@@ -268,7 +277,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---interopsante.org-fhir-CodeSystem-fr-v2-0203-INTRN"> </a>  
+                  <a name="null-x-http---interopsante.org-fhir-CodeSystem-fr-v2-0203-INTRN"> </a>  
                   <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/CodeSystem/fr-v2-0203.html#fr-v2-0203-INTRN">INTRN</a>
                 </td>
                 <td>http://interopsante.org/fhir/CodeSystem/fr-v2-0203</td>
@@ -282,7 +291,7 @@
         <name value="TypeIdentifiantSASSOS"/>
         <title value="Type identifiant SAS SOS"/>
         <status value="draft"/>
-        <date value="2024-06-26T17:15:09+00:00"/>
+        <date value="2024-06-27T11:51:58+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -291,8 +300,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d15d342d-6600-42e5-bdad-a39a50398a74"/>
-          <timestamp value="2024-06-26T17:15:47+00:00"/>
+          <identifier value="urn:uuid:e617aeb0-200b-4e31-8504-ceac3e0d8beb"/>
+          <timestamp value="2024-06-27T11:52:39+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -332,6 +341,9 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0276.html">codesystem appointmentReason v2.0.0 (CodeSystem)</a>
             </p>
@@ -353,7 +365,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v2-0276-ROUTINE"> </a>  
+                  <a name="null-x-http---terminology.hl7.org-CodeSystem-v2-0276-ROUTINE"> </a>  
                   <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0276.html#v2-0276-ROUTINE">ROUTINE</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v2-0276</td>
@@ -367,7 +379,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v2-0276-WALKIN"> </a>  
+                  <a name="null-x-http---terminology.hl7.org-CodeSystem-v2-0276-WALKIN"> </a>  
                   <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0276.html#v2-0276-WALKIN">WALKIN</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v2-0276</td>
@@ -387,7 +399,7 @@
         <name value="AppointmentReasonSAS"/>
         <title value="Appointment reason SAS"/>
         <status value="draft"/>
-        <date value="2024-06-26T17:15:09+00:00"/>
+        <date value="2024-06-27T11:51:58+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -396,8 +408,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7a29bc32-0c64-43d8-8842-54f86dced185"/>
-          <timestamp value="2024-06-26T17:15:47+00:00"/>
+          <identifier value="urn:uuid:c523eb54-5006-41eb-8b7e-ff9e7fe7586e"/>
+          <timestamp value="2024-06-27T11:52:39+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
