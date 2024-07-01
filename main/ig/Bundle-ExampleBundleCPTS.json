@@ -49,7 +49,7 @@
     }
   },
   {
-    "fullUrl" : "https://<base_URl>/Schedule/ExampleScheduleCPTS",
+    "fullUrl" : "https://<base_URl>/Schedule/ExampleSchedule",
     "resource" : {
       "resourceType" : "Schedule",
       "id" : "ExampleSchedule",
