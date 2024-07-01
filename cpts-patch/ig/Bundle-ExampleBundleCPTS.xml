@@ -49,7 +49,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://&lt;base_URl&gt;/Schedule/ExampleScheduleCPTS"/>
+    <fullUrl value="https://&lt;base_URl&gt;/Schedule/ExampleSchedule"/>
     <resource>
       <Schedule>
         <id value="ExampleSchedule"/>

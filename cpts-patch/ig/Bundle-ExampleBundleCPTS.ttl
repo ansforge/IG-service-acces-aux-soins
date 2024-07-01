@@ -24,8 +24,8 @@
      fhir:fullUrl [ fhir:v "https://<base_URl>/Slot/ExampleSlotCPTS"^^xsd:anyURI ] ;
      fhir:resource ( <https://<base_URl>/Slot/ExampleSlotCPTS> )
   ] [
-     fhir:fullUrl [ fhir:v "https://<base_URl>/Schedule/ExampleScheduleCPTS"^^xsd:anyURI ] ;
-     fhir:resource ( <https://<base_URl>/Schedule/ExampleScheduleCPTS> )
+     fhir:fullUrl [ fhir:v "https://<base_URl>/Schedule/ExampleSchedule"^^xsd:anyURI ] ;
+     fhir:resource ( <https://<base_URl>/Schedule/ExampleSchedule> )
   ] [
      fhir:fullUrl [ fhir:v "https://<base_URl>/Practitioner/ExamplePractitioner"^^xsd:anyURI ] ;
      fhir:resource ( <https://<base_URl>/Practitioner/ExamplePractitioner> )
@@ -79,7 +79,7 @@
   fhir:start [ fhir:v "2024-06-12T16:40:00.000+02:00"^^xsd:dateTime] ; # 
   fhir:end [ fhir:v "2024-06-12T17:00:00.000+02:00"^^xsd:dateTime] . # 
 
-<https://<base_URl>/Schedule/ExampleScheduleCPTS> a fhir:Schedule ;
+<https://<base_URl>/Schedule/ExampleSchedule> a fhir:Schedule ;
   fhir:id [ fhir:v "ExampleSchedule"] ; # 
   fhir:meta [
      fhir:profile ( [
