@@ -60,7 +60,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://interopsante.org/fhir/CodeSystem/fr-v2-0203""/>
     <code value=""IDNPS""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://interopsante.org/fhir/ValueSet/fr-practioner-identifier-type","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://interopsante.org/fhir/ValueSet/fr-practioner-identifier-type","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Practitioner.identifier.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}

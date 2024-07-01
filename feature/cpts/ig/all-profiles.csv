@@ -1576,7 +1576,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://interopsante.org/fhir/CodeSystem/fr-v2-0203""/>
     <code value=""IDNPS""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://interopsante.org/fhir/ValueSet/fr-practioner-identifier-type","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://interopsante.org/fhir/ValueSet/fr-practioner-identifier-type","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "FrPractitionerAgregateur","Practitioner.identifier.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
@@ -3801,7 +3801,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sas-cpts-bundle-aggregator","Bundle.entry:organizationAgregateurCPTS.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator]]} {[]}
+"sas-cpts-bundle-aggregator","Bundle.entry:organizationAgregateurCPTS.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-organization-aggregator]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "sas-cpts-bundle-aggregator","Bundle.entry:organizationAgregateurCPTS.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -4004,7 +4004,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Whether this HealthcareService record is in active use","This flag is used to mark the record to not be used. This is not used when a center is closed for maintenance, or for holidays, the notAvailable period is to be used for this.","This element is labeled as a modifier because it may be used to mark that the resource was created in error.","","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"HealthcareService.active",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sas-cpts-healthcareservice-aggregator","HealthcareService.providedBy","HealthcareService.providedBy","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator]]}
+"sas-cpts-healthcareservice-aggregator","HealthcareService.providedBy","HealthcareService.providedBy","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-organization-aggregator]]}
 ","Organization that provides this service","The organization that provides this healthcare service.","This property is recommended to be the same as the Location's managingOrganization, and if not provided should be interpreted as such. If the Location does not have a managing Organization, then this property should be populated.","","","","","","","","",,,,,"",,,,"HealthcareService.providedBy",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
@@ -4230,7 +4230,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "sas-cpts-organization-aggregator","Organization.identifier","Organization.identifier","","","",1,1,"","","Y","Identifier {[]} {[]}
 ","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-SIRET-invariant:Le numéro SIRET doit être préfixé par 3 suivi de 14 caractères numériques {value.matches('^3[0-9]{14}$')}"
+FINESS-invariant:Le numéro FINESS doit être préfixé par 1 suivi de 9 caractères numériques {value.matches('^1[0-9]{9}$')}"
 "sas-cpts-organization-aggregator","Organization.identifier.id","Organization.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "sas-cpts-organization-aggregator","Organization.identifier.extension","Organization.identifier.extension","","extensions
@@ -4441,7 +4441,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sas-cpts-organization-aggregator","Organization.name","Organization.name","","","",0,1,"","","Y","string {[]} {[]}
+"sas-cpts-organization-aggregator","Organization.name","Organization.name","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Name used for the organization","A name associated with the organization.","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.","Need to use the name as the label of the organization.","","","","","","","",,,,,"",,,,"Organization.name",0,1,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -4451,7 +4451,7 @@ org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 For searching knowing previous names that the organization was known by can be very useful.","","","","","","","",,,,,"",,,,"Organization.alias",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sas-cpts-organization-aggregator","Organization.telecom","Organization.telecom","","","",0,*,"","","","ContactPoint {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrContactPoint]]} {[]}
+"sas-cpts-organization-aggregator","Organization.telecom","Organization.telecom","","","",0,*,"Y","","","ContactPoint {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrContactPoint]]} {[]}
 ","Details of a Technology mediated contact point (phone, fax, email, etc.)","Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc.","The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.","Human contact for the organization.","","","","","","","",,,,,"",,,,"Organization.telecom",0,*,"ele-1
 org-3","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}org-3:The telecom of an organization can never be of use 'home' {where(use = 'home').empty()}"
@@ -5834,7 +5834,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sas-sos-bundle-aggregator","Bundle.entry:organizationAgregateurSOS.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-organization-aggregator]]} {[]}
+"sas-sos-bundle-aggregator","Bundle.entry:organizationAgregateurSOS.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "sas-sos-bundle-aggregator","Bundle.entry:organizationAgregateurSOS.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -6173,7 +6173,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Altitude with WGS84 datum","Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes below).","Do not use an IEEE type floating point type, instead use something that works like a true decimal, with inbuilt precision (e.g. Java BigInteger)","","","","","","","","",,,,,"",,,,"Location.position.altitude",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sas-sos-location-aggregator","Location.managingOrganization","Location.managingOrganization","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-organization-aggregator]]}
+"sas-sos-location-aggregator","Location.managingOrganization","Location.managingOrganization","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator]]}
 ","Organization responsible for provisioning and upkeep","The organization responsible for the provisioning and upkeep of the location.","This can also be used as the part of the organization hierarchy where this location provides services. These services can be defined through the HealthcareService resource.","Need to know who manages the location.","","","","","","","",,,,,"",,,,"Location.managingOrganization",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
@@ -6352,7 +6352,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "sas-sos-organization-aggregator","Organization.identifier","Organization.identifier","","","",1,1,"","","Y","Identifier {[]} {[]}
 ","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-FINESS-invariant:Le numéro FINESS doit être préfixé par 1 suivi de 9 caractères numériques {value.matches('^1[0-9]{9}$')}"
+SIRET-invariant:Le numéro SIRET doit être préfixé par 3 suivi de 14 caractères numériques {value.matches('^3[0-9]{14}$')}"
 "sas-sos-organization-aggregator","Organization.identifier.id","Organization.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "sas-sos-organization-aggregator","Organization.identifier.extension","Organization.identifier.extension","","extensions
@@ -6563,7 +6563,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sas-sos-organization-aggregator","Organization.name","Organization.name","","","",0,1,"Y","","Y","string {[]} {[]}
+"sas-sos-organization-aggregator","Organization.name","Organization.name","","","",0,1,"","","Y","string {[]} {[]}
 ","Name used for the organization","A name associated with the organization.","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.","Need to use the name as the label of the organization.","","","","","","","",,,,,"",,,,"Organization.name",0,1,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -6573,7 +6573,7 @@ org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 For searching knowing previous names that the organization was known by can be very useful.","","","","","","","",,,,,"",,,,"Organization.alias",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"sas-sos-organization-aggregator","Organization.telecom","Organization.telecom","","","",0,*,"Y","","","ContactPoint {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrContactPoint]]} {[]}
+"sas-sos-organization-aggregator","Organization.telecom","Organization.telecom","","","",0,*,"","","","ContactPoint {[CanonicalType[http://interopsante.org/fhir/StructureDefinition/FrContactPoint]]} {[]}
 ","Details of a Technology mediated contact point (phone, fax, email, etc.)","Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc.","The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.","Human contact for the organization.","","","","","","","",,,,,"",,,,"Organization.telecom",0,*,"ele-1
 org-3","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}org-3:The telecom of an organization can never be of use 'home' {where(use = 'home').empty()}"

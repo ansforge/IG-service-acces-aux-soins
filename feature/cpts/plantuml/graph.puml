@@ -128,12 +128,13 @@ package IG #DDDDDD{
              HealthcareService.providedBy => [1..None]
         } 
 
-        class FrOrganizationAgregateurSOS{
+        class FrOrganizationAgregateurCPTS{
 
-             Organization => [None..None]
              Organization.identifier => [1..1]
              Organization.identifier.type => [None..None]
              Organization.identifier.system => [None..None]
+             Organization.name => [None..None]
+             Organization.telecom => [None..None]
         } 
 
         class FrSlotAgregateurCPTS{
@@ -206,13 +207,11 @@ package IG #DDDDDD{
              Location.managingOrganization.reference => [1..None]
         } 
 
-        class FrOrganizationAgregateurCPTS{
+        class FrOrganizationAgregateurSOS{
 
              Organization.identifier => [1..1]
              Organization.identifier.type => [None..None]
              Organization.identifier.system => [None..None]
-             Organization.name => [None..None]
-             Organization.telecom => [None..None]
         } 
 
         class FrScheduleAgregateurSOS{
@@ -319,7 +318,7 @@ package "Ressources de base" #palegreen {
 
  class "http://interopsante.org/fhir/StructureDefinition/FrOrganization" as  class8851530b55b5391f2e88430de6209c3c 
 
-    class8851530b55b5391f2e88430de6209c3c --> FrOrganizationAgregateurSOS
+    class8851530b55b5391f2e88430de6209c3c --> FrOrganizationAgregateurCPTS
 
  class "http://interopsante.org/fhir/StructureDefinition/FrSlot" as  class86363a39b418154a968adc9b5da3fe9c 
 
@@ -339,7 +338,7 @@ package "Ressources de base" #palegreen {
 
  class "http://interopsante.org/fhir/StructureDefinition/FrOrganization" as  class8851530b55b5391f2e88430de6209c3c 
 
-    class8851530b55b5391f2e88430de6209c3c --> FrOrganizationAgregateurCPTS
+    class8851530b55b5391f2e88430de6209c3c --> FrOrganizationAgregateurSOS
 
  class "http://interopsante.org/fhir/StructureDefinition/FrSchedule" as  classb622660bfabd924a2e1a86fb95e2ca04 
 

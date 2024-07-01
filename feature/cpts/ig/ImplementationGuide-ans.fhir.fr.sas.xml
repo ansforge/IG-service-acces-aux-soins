@@ -10,7 +10,7 @@
   <name value="SAS"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2024-06-27T13:56:11+00:00"/>
+  <date value="2024-07-01T09:27:46+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -567,7 +567,7 @@
       </reference>
       <name value="ExampleOrgaCPTS"/>
       <description value="Exemple d'organisation CPTS"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-organization-aggregator"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -673,7 +673,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sas-sos-organization-aggregator"/>
+        <reference value="StructureDefinition/sas-cpts-organization-aggregator"/>
       </reference>
       <name value="FrOrganizationAgregateurCPTS"/>
       <description value="Profil dérivé de FrOrganization pour le cas d'usage agrégateur CPTS"/>
@@ -684,7 +684,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sas-cpts-organization-aggregator"/>
+        <reference value="StructureDefinition/sas-sos-organization-aggregator"/>
       </reference>
       <name value="FrOrganizationAgregateurSOS"/>
       <description value="Profil d'Organization, dérivé de FrOrganization, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins"/>

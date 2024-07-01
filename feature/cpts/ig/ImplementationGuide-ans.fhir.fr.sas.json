@@ -10,7 +10,7 @@
   "name" : "SAS",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-06-27T13:56:11+00:00",
+  "date" : "2024-07-01T09:27:46+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -738,7 +738,7 @@
       },
       "name" : "ExampleOrgaCPTS",
       "description" : "Exemple d'organisation CPTS",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-sos-organization-aggregator"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/sas/StructureDefinition/sas-cpts-organization-aggregator"
     },
     {
       "extension" : [{
@@ -854,7 +854,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/sas-sos-organization-aggregator"
+        "reference" : "StructureDefinition/sas-cpts-organization-aggregator"
       },
       "name" : "FrOrganizationAgregateurCPTS",
       "description" : "Profil dérivé de FrOrganization pour le cas d'usage agrégateur CPTS",
@@ -866,7 +866,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/sas-cpts-organization-aggregator"
+        "reference" : "StructureDefinition/sas-sos-organization-aggregator"
       },
       "name" : "FrOrganizationAgregateurSOS",
       "description" : "Profil d'Organization, dérivé de FrOrganization, pour le service d’agrégation de créneaux de la plateforme SAS (Service d’accès aux soins), dans le cadre du cas d’usage SOS Médecins",
