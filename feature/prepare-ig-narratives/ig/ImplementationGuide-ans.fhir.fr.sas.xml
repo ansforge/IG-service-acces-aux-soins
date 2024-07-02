@@ -10,7 +10,7 @@
   <name value="SAS"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2024-07-02T12:57:44+00:00"/>
+  <date value="2024-07-02T13:11:33+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -858,33 +858,25 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="specifications_techniques_1.html"/>
+          <valueUrl value="specifications_techniques-tous-creation_rdv.html"/>
         </extension>
-        <nameUrl value="specifications_techniques_1.html"/>
-        <title value="Recherche des créneaux"/>
+        <nameUrl value="specifications_techniques-tous-creation_rdv.html"/>
+        <title value="11 - Tous - Création de rendez-vous"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="specifications_techniques_2.html"/>
+          <valueUrl value="specifications_techniques-tous-maj_rdv.html"/>
         </extension>
-        <nameUrl value="specifications_techniques_2.html"/>
-        <title value="Création de rendez-vous"/>
+        <nameUrl value="specifications_techniques-tous-maj_rdv.html"/>
+        <title value="12 - Tous - Mise à jour de rendez-vous"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="specifications_techniques_3.html"/>
+          <valueUrl value="ressources_casusage.html"/>
         </extension>
-        <nameUrl value="specifications_techniques_3.html"/>
-        <title value="Mise à jour de rendez-vous"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="ressources_casusages.html"/>
-        </extension>
-        <nameUrl value="ressources_casusages.html"/>
+        <nameUrl value="ressources_casusage.html"/>
         <title value="Ressources par cas d'usage"/>
         <generation value="markdown"/>
       </page>
