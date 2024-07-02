@@ -10,7 +10,7 @@
   "name" : "SAS",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-07-02T13:14:05+00:00",
+  "date" : "2024-07-02T13:26:15+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1057,6 +1057,24 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "specifications_techniques-ps-recherche_creneaux.html"
+        }],
+        "nameUrl" : "specifications_techniques-ps-recherche_creneaux.html",
+        "title" : "01 - PS - Recherche des créneaux",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "specifications_techniques-cpts-recherche_creneaux.html"
+        }],
+        "nameUrl" : "specifications_techniques-cpts-recherche_creneaux.html",
+        "title" : "02 - CPTS - Recherche des créneaux",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "specifications_techniques-tous-creation_rdv.html"
         }],
         "nameUrl" : "specifications_techniques-tous-creation_rdv.html",
@@ -1087,7 +1105,7 @@
           "valueUrl" : "ressources.html"
         }],
         "nameUrl" : "ressources.html",
-        "title" : "Ressources de conformité",
+        "title" : "Ressources conformité",
         "generation" : "markdown"
       },
       {

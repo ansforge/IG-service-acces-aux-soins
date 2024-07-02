@@ -10,7 +10,7 @@
   <name value="SAS"/>
   <title value="Service d'Accès aux Soins"/>
   <status value="draft"/>
-  <date value="2024-07-02T13:14:05+00:00"/>
+  <date value="2024-07-02T13:26:15+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -858,6 +858,22 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_techniques-ps-recherche_creneaux.html"/>
+        </extension>
+        <nameUrl value="specifications_techniques-ps-recherche_creneaux.html"/>
+        <title value="01 - PS - Recherche des créneaux"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_techniques-cpts-recherche_creneaux.html"/>
+        </extension>
+        <nameUrl value="specifications_techniques-cpts-recherche_creneaux.html"/>
+        <title value="02 - CPTS - Recherche des créneaux"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="specifications_techniques-tous-creation_rdv.html"/>
         </extension>
         <nameUrl value="specifications_techniques-tous-creation_rdv.html"/>
@@ -885,7 +901,7 @@
           <valueUrl value="ressources.html"/>
         </extension>
         <nameUrl value="ressources.html"/>
-        <title value="Ressources de conformité"/>
+        <title value="Ressources conformité"/>
         <generation value="markdown"/>
       </page>
       <page>

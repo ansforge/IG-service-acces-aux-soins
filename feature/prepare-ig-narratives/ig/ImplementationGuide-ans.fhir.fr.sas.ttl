@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SAS"] ; # 
   fhir:title [ fhir:v "Service d'Accès aux Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-02T13:14:05+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-02T13:26:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -987,6 +987,22 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "specifications_techniques-ps-recherche_creneaux.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "specifications_techniques-ps-recherche_creneaux.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "01 - PS - Recherche des créneaux" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "specifications_techniques-cpts-recherche_creneaux.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "specifications_techniques-cpts-recherche_creneaux.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "02 - CPTS - Recherche des créneaux" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "specifications_techniques-tous-creation_rdv.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "specifications_techniques-tous-creation_rdv.html"^^xsd:anyURI ] ;
@@ -1014,7 +1030,7 @@
            fhir:value [ fhir:v "ressources.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "ressources.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Ressources de conformité" ] ;
+         fhir:title [ fhir:v "Ressources conformité" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
