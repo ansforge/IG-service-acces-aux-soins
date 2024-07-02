@@ -211,6 +211,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#construction-de-la-réponse-de-base" id="markdown-toc-construction-de-la-réponse-de-base">Construction de la réponse de base</a></li>
   <li><a href="#critères-de-recherche" id="markdown-toc-critères-de-recherche">Critères de recherche</a></li>
   <li><a href="#exemple-de-requête" id="markdown-toc-exemple-de-requête">Exemple de requête</a></li>
+  <li><a href="#nomenclatures" id="markdown-toc-nomenclatures">Nomenclatures</a></li>
+  <li><a href="#validateur-ressources" id="markdown-toc-validateur-ressources">Validateur ressources</a></li>
 </ul>
 
 </div>
@@ -378,6 +380,8 @@ Plus de précision sur la spécification FHIR :
 
 <h3 id="exemple-de-requête">Exemple de requête</h3>
 
+<p>La requête ci-dessous correspond à une recherche de créneaux disponibles entre le 02 janvier 2021 à 10h et le 06 janvier 2021 à 10h pour les PS correspondant aux RPPS préfixés : 810101288385, 800001288385 ou 810106738385.</p>
+
 <p><strong>Requête :</strong></p>
 
 <p><code class="language-plaintext highlighter-rouge">get[BASE]/Slot?_include=Slot:schedule&amp;_include:iterate=Schedule:actor&amp;start=ge2021-01-02T10:00:00&amp;start=le2021-01-06T10:00:00&amp;schedule.actor:Practitioner.identifier=urn:oid:1.2.250.1.71.4.2.1|810101288385, urn:oid:1.2.250.1.71.4.2.1|800001288385,urn:oid:1.2.250.1.71.4.2.1|810106738385&amp;status=free</code></p>
@@ -449,7 +453,11 @@ Plus de précision sur la spécification FHIR :
   </li>
 </ol>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<details>
+  <summary>Déplier pour accéder au détail de l'exemple de réponse au format json</summary>
+
+```
+{
   "resourceType": "Bundle",
   "id": "8cbb33dc-779e-45e9-a5f6-ea66101288c5",
   "meta": {
@@ -1044,8 +1052,119 @@ Plus de précision sur la spécification FHIR :
     }
   ]
 }
+```
+</details>
 
+<h3 id="nomenclatures">Nomenclatures</h3>
+
+<p>Cette section détaille les nomenclatures à utiliser afin de renseigner les différents éléments codifiés de la réponse.</p>
+<ul>
+  <li><strong>ID : 3 – Statut du créneau :</strong>
+    <ul>
+      <li>L’utilisation de la nomenclature standard slotstatus (<a href="http://hl7.org/fhir/R4/valueset-slotstatus.html">http://hl7.org/fhir/R4/valueset-slotstatus.html</a>) est attendue. Cependant, la plateforme numérique SAS ne récupérant que des créneaux disponibles, ce champ aura systématiquement la valeur <code class="language-plaintext highlighter-rouge">free</code>.</li>
+    </ul>
+  </li>
+  <li><strong>ID : 13 – Spécialités ou compétences particulières du PS associées au créneau :</strong>
+    <ul>
+      <li>Dans le cadre du profil FrSlot, l’élément specialty est lié à la nomenclature des spécialités ordinales du MOS (<a href="https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale/">https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale/</a>). La plateforme numérique SAS sera cependant en mesure de traiter d’autres compétences ou spécialités transmises sous la forme d’une donnée structurée au sein de l’élément <code class="language-plaintext highlighter-rouge">coding</code>, ou sous la forme d’un texte libre au niveau de l’élément <code class="language-plaintext highlighter-rouge">text</code>.</li>
+    </ul>
+  </li>
+  <li><strong>ID : 14 – Type de créneau :</strong>
+    <ul>
+      <li>Afin de répondre aux besoins de la plateforme numérique SAS, une nomenclature dédiée a été mise en oeuvre (<a href="https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau">https://mos.esante.gouv.fr/NOS/TRE_R314-TypeCreneau/FHIR/TRE-R314-TypeCreneau</a>). 3 types de créneaux sont présentés ci-dessous. A noter qu’un créneau peut porter une combinaison de ces valeurs :
+        <ul>
+          <li>PUBLIC – Créneau de soins défini par un professionnel de santé ou son délégataire dans son logiciel de prise de RDV accessible par le grand public.</li>
+          <li>PRO – Créneau de soins défini par un professionnel de santé ou son délégataire dans son logiciel de prise de RDV accessible à l’ensemble des PS.</li>
+          <li>SNP – Créneau de soins défini par un professionnel de santé ou son délégataire dans son logiciel de prise de RDV accessible par les Régulateurs et OSNP.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>ID : 15 – Type de consultation :</strong>
+    <ul>
+      <li>L’utilisation de la nomenclature standard ActEncounterCode (<a href="https://www.hl7.org/fhir/v3/ActEncounterCode/vs.html">https://www.hl7.org/fhir/v3/ActEncounterCode/vs.html</a>) est attendue. Cette nomenclature contient différentes notions, cependant, la plateforme numérique SAS gère les 3 types de créneaux ci-dessous. A noter qu’un créneau peut porter une combinaison de ces valeurs :
+        <ul>
+          <li>AMB – Consultation au cabinet</li>
+          <li>HH – Consultation à domicile</li>
+          <li>VR – Téléconsultation</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>ID : 17 – URL de redirection pour la prise de RDV :</strong>
+    <ul>
+      <li>Il est attendu l’URL de redirection vers l’agenda du PS concerné. Si l’utilisateur vient du SAS et n’est pas authentifié, il est demandé de le rediriger vers la page d’authentification de la solution éditeur avant d’accéder à l’agenda du PS. Afin de faciliter l’implémentation de la règle métier, la PTF numérique SAS ajoute un paramètre <code class="language-plaintext highlighter-rouge">origin</code> à l’URL transmise par l’éditeur au moment de la redirection pour identifier la provenance.</li>
+    </ul>
+  </li>
+  <li><strong>ID : 18 – Créneau avec ou sans RDV :</strong>
+    <ul>
+      <li>L’utilisation de la nomenclature standard AppointmentReasonCodes (<a href="https://www.hl7.org/fhir/v2/0276/index.html">https://www.hl7.org/fhir/v2/0276/index.html</a>) est attendue. Cette nomenclature contient différentes notions, cependant, la plateforme numérique SAS gère les 2 valeurs ci-dessous :
+        <ul>
+          <li>ROUTINE – Créneau avec prise de RDV possible.</li>
+          <li>WALKIN – Créneau sans prise de RDV possible</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="validateur-ressources">Validateur ressources</h3>
+<p>Le validateur mis à disposition des développeurs dans le cadre du projet SAS offre la possibilité tester le format des bundles de réponse générés. Il permet de vérifier que les réponses sont correctement formatées, que l’ensemble des informations obligatoires sont bien présentes et que les données codifiées exploitent les bonnes nomenclatures.
+Pour que le validateur puisse effectuer correctement les contrôles au niveau de la structure, il est nécessaire de renseigner pour chacun des “resourceType” correspondant, le meta.profile “URL” ci-dessous :</p>
+<ul>
+  <li>http://sas.fr/fhir/StructureDefinition/BundleAgregateur</li>
+  <li>http://sas.fr/fhir/StructureDefinition/FrLocationAgregateur</li>
+  <li>http://sas.fr/fhir/StructureDefinition/FrPractitionerAgregateur</li>
+  <li>http://sas.fr/fhir/StructureDefinition/FrPractitionerRoleExerciceAgregateur</li>
+  <li>http://sas.fr/fhir/StructureDefinition/FrScheduleAgregateur</li>
+  <li>http://sas.fr/fhir/StructureDefinition/FrSlotAgregateur</li>
+</ul>
+
+<p>Ci-dessous un exemple :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"resourceType": "Bundle",
+"id": "8cbb33dc-779e-45e9-a5f6-ea66101288c5",
+"meta": {
+  "profile": [
+    "http://sas.fr/fhir/StructureDefinition/BundleAgregateur"
+  ]
+},
 </code></pre></div></div>
+
+<p>Le validateur est disponible sur l’espace de test de l’ANS : <a href="https://interop.esante.gouv.fr/EVSClient/fhir/validator.seam?standard=FHIR%20(SAS)&amp;extension=SAS">https://interop.esante.gouv.fr/EVSClient/fhir/validator.seam?standard=FHIR%20(SAS)&amp;extension=SAS</a>. Pour faciliter les tests et conserver l’historique, nous vous recommandons de créer votre compte sur la plateforme.
+Afin de tester un fichier, il suffit de sélectionner le format <code class="language-plaintext highlighter-rouge">JSON</code>, d’ajouter le fichier via le bouton <code class="language-plaintext highlighter-rouge">Add…</code>, de sélectionner le modèle <code class="language-plaintext highlighter-rouge">FrBundleAgregateurSAS</code> puis de cliquer sur <code class="language-plaintext highlighter-rouge">valider</code> :</p>
+
+<table align="center">
+    <tr>
+        <td align="center">
+            <div class="figure">
+                <img src="validateur_creneaux_1.png" alt="Accès au validateur agrégateur de créneaux" title="Accès au validateur agrégateur de créneaux" />
+            </div>
+        </td>    
+    </tr>
+    <tr>
+        <td align="center">
+            <b>Figure 1 - Accès au validateur agrégateur de créneaux</b>
+        </td>
+    </tr>
+</table>
+
+<p>Vous obtiendrez alors un rapport de test mettant en valeur les erreurs bloquantes et les différents warning :</p>
+
+<table align="center">
+    <tr>
+        <td align="center">
+            <div class="figure">
+                <img src="validateur_creneaux_2.png" alt="Rapport validateur agrégateur de créneaux" title="Rapport validateur agrégateur de créneaux" />
+            </div>
+        </td>    
+    </tr>
+    <tr>
+        <td align="center">
+            <b>Figure 2 - Rapport validateur agrégateur de créneaux</b>
+        </td>
+    </tr>
+</table>
 
 
 
@@ -1088,7 +1207,7 @@ Plus de précision sur la spécification FHIR :
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sas#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 2, 2024 13:26+0000">2024-07-02</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.sas#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 2, 2024 14:01+0000">2024-07-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

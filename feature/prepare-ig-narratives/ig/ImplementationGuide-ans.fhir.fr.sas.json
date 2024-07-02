@@ -10,7 +10,7 @@
   "name" : "SAS",
   "title" : "Service d'Accès aux Soins",
   "status" : "draft",
-  "date" : "2024-07-02T13:26:15+00:00",
+  "date" : "2024-07-02T14:01:23+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1097,15 +1097,6 @@
         }],
         "nameUrl" : "ressources_casusage.html",
         "title" : "Ressources par cas d'usage",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "ressources.html"
-        }],
-        "nameUrl" : "ressources.html",
-        "title" : "Ressources conformité",
         "generation" : "markdown"
       },
       {
